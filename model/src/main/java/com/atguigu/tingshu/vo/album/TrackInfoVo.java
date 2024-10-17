@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.vo.album;
+package com.atguigu.tingshu.vo.album;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotEmpty;

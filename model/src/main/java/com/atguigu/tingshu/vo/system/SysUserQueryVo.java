@@ -1,6 +1,6 @@
 //
 //
-package com.bigwharf.tingshu.vo.system;
+package com.atguigu.tingshu.vo.system;
 
 
 import lombok.Data;

@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.user.api;
+package com.atguigu.tingshu.user.api;
 
-import com.bigwharf.tingshu.user.service.UserInfoService;
+import com.atguigu.tingshu.user.service.UserInfoService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

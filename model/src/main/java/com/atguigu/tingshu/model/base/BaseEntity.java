@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.model.base;
+package com.atguigu.tingshu.model.base;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

@@ -1,7 +1,7 @@
-package com.bigwharf.tingshu.system.service;
+package com.atguigu.tingshu.system.service;
 
-import com.bigwharf.tingshu.model.system.SysPost;
-import com.bigwharf.tingshu.vo.system.SysPostQueryVo;
+import com.atguigu.tingshu.model.system.SysPost;
+import com.atguigu.tingshu.vo.system.SysPostQueryVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;

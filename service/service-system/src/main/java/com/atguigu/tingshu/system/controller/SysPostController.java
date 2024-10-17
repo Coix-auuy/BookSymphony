@@ -1,11 +1,11 @@
-package com.bigwharf.tingshu.system.controller;
+package com.atguigu.tingshu.system.controller;
 
-import com.bigwharf.tingshu.common.annotation.Log;
-import com.bigwharf.tingshu.common.enums.BusinessType;
-import com.bigwharf.tingshu.common.result.Result;
-import com.bigwharf.tingshu.model.system.SysPost;
-import com.bigwharf.tingshu.system.service.SysPostService;
-import com.bigwharf.tingshu.vo.system.SysPostQueryVo;
+import com.atguigu.tingshu.common.annotation.Log;
+import com.atguigu.tingshu.common.enums.BusinessType;
+import com.atguigu.tingshu.common.result.Result;
+import com.atguigu.tingshu.model.system.SysPost;
+import com.atguigu.tingshu.system.service.SysPostService;
+import com.atguigu.tingshu.vo.system.SysPostQueryVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.v3.oas.annotations.Operation;

@@ -1,8 +1,8 @@
-package com.bigwharf.tingshu.common.handler;
+package com.atguigu.tingshu.common.handler;
 
-import com.bigwharf.tingshu.common.execption.GuiguException;
-import com.bigwharf.tingshu.common.result.Result;
-import com.bigwharf.tingshu.common.result.ResultCodeEnum;
+import com.atguigu.tingshu.common.execption.GuiguException;
+import com.atguigu.tingshu.common.result.Result;
+import com.atguigu.tingshu.common.result.ResultCodeEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.validation.BindException;

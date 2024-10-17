@@ -57,6 +57,6 @@ live:
   #云直播控制台配置的推流域名
   pushDomain: 166120.livepush.myqcloud.com
   #云直播控制台配置的拉流域名
-  pullDomain: txplay.bigwharf.cn
+  pullDomain: txplay.atguigu.cn
   #直播SDK-->应用管理-->自己创建应用中的应用名称
   AppName: live

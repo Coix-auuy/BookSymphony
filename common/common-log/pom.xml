@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>common</artifactId>
-        <groupId>com.bigwharf.tingshu</groupId>
+        <groupId>com.atguigu.tingshu</groupId>
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -13,13 +13,13 @@
 	
     <dependencies>
         <dependency>
-            <groupId>com.bigwharf.tingshu</groupId>
+            <groupId>com.atguigu.tingshu</groupId>
             <artifactId>model</artifactId>
             <version>1.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.bigwharf.tingshu</groupId>
+            <groupId>com.atguigu.tingshu</groupId>
             <artifactId>common-util</artifactId>
             <version>1.0</version>
             <scope>provided</scope>
@@ -35,7 +35,7 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.bigwharf.tingshu</groupId>
+            <groupId>com.atguigu.tingshu</groupId>
             <artifactId>service-system-client</artifactId>
             <version>1.0</version>
             <scope>provided</scope>

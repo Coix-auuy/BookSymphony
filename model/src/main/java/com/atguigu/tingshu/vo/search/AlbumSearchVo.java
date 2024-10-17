@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.vo.search;
+package com.atguigu.tingshu.vo.search;
 
-import com.bigwharf.tingshu.model.search.AttributeValueIndex;
+import com.atguigu.tingshu.model.search.AttributeValueIndex;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.DateFormat;

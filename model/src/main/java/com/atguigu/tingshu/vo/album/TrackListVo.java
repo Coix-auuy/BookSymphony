@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.vo.album;
+package com.atguigu.tingshu.vo.album;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
@@ -21,7 +21,7 @@ public class TrackListVo {
 	@Schema(description = "标题")
 	private String trackTitle;
 
-	@Schema(description = "专辑封面原图，尺寸不固定，最大尺寸为960*960（像素）")
+	@Schema(description = "声音封面原图，尺寸不固定，最大尺寸为960*960（像素）")
 	private String coverUrl;
 
 	@Schema(description = "声音媒体时长，单位秒")

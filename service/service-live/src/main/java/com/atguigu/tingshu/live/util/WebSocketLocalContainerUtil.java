@@ -1,9 +1,9 @@
-package com.bigwharf.tingshu.live.util;
+package com.atguigu.tingshu.live.util;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
-import com.bigwharf.tingshu.model.live.FromUser;
-import com.bigwharf.tingshu.model.live.SocketMsg;
+import com.atguigu.tingshu.model.live.FromUser;
+import com.atguigu.tingshu.model.live.SocketMsg;
 import jakarta.websocket.Session;
 import org.joda.time.DateTime;
 import org.springframework.util.CollectionUtils;

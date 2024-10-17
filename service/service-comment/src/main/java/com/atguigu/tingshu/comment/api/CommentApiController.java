@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.comment.api;
+package com.atguigu.tingshu.comment.api;
 
-import com.bigwharf.tingshu.comment.service.CommentService;
+import com.atguigu.tingshu.comment.service.CommentService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

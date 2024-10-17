@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.payment.service;
+package com.atguigu.tingshu.payment.service;
 
 public interface WxPayService {
 

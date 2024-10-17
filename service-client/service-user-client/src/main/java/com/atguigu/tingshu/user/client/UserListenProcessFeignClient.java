@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.user.client;
+package com.atguigu.tingshu.user.client;
 
-import com.bigwharf.tingshu.user.client.impl.UserListenProcessDegradeFeignClient;
+import com.atguigu.tingshu.user.client.impl.UserListenProcessDegradeFeignClient;
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**

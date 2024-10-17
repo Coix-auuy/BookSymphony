@@ -1,7 +1,7 @@
-package com.bigwharf.tingshu.common.annotation;
+package com.atguigu.tingshu.common.annotation;
 
-import com.bigwharf.tingshu.common.enums.BusinessType;
-import com.bigwharf.tingshu.common.enums.OperatorType;
+import com.atguigu.tingshu.common.enums.BusinessType;
+import com.atguigu.tingshu.common.enums.OperatorType;
 
 import java.lang.annotation.*;
 

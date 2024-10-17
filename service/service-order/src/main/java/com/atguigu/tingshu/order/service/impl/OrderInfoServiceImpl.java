@@ -1,8 +1,8 @@
-package com.bigwharf.tingshu.order.service.impl;
+package com.atguigu.tingshu.order.service.impl;
 
-import com.bigwharf.tingshu.model.order.OrderInfo;
-import com.bigwharf.tingshu.order.mapper.OrderInfoMapper;
-import com.bigwharf.tingshu.order.service.OrderInfoService;
+import com.atguigu.tingshu.model.order.OrderInfo;
+import com.atguigu.tingshu.order.mapper.OrderInfoMapper;
+import com.atguigu.tingshu.order.service.OrderInfoService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

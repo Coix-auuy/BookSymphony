@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.dispatch.job;
+package com.atguigu.tingshu.dispatch.job;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

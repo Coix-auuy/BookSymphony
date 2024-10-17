@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.album.client;
+package com.atguigu.tingshu.album.client;
 
-import com.bigwharf.tingshu.album.client.impl.TrackInfoDegradeFeignClient;
+import com.atguigu.tingshu.album.client.impl.TrackInfoDegradeFeignClient;
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**

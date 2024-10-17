@@ -1,10 +1,10 @@
-package com.bigwharf.tingshu.system.controller;
+package com.atguigu.tingshu.system.controller;
 
-import com.bigwharf.tingshu.common.annotation.Log;
-import com.bigwharf.tingshu.common.enums.BusinessType;
-import com.bigwharf.tingshu.common.result.Result;
-import com.bigwharf.tingshu.model.system.SysDept;
-import com.bigwharf.tingshu.system.service.SysDeptService;
+import com.atguigu.tingshu.common.annotation.Log;
+import com.atguigu.tingshu.common.enums.BusinessType;
+import com.atguigu.tingshu.common.result.Result;
+import com.atguigu.tingshu.model.system.SysDept;
+import com.atguigu.tingshu.system.service.SysDeptService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.annotation.Resource;

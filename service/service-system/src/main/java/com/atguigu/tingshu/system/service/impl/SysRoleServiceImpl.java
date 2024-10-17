@@ -1,12 +1,12 @@
-package com.bigwharf.tingshu.system.service.impl;
+package com.atguigu.tingshu.system.service.impl;
 
-import com.bigwharf.tingshu.model.system.SysRole;
-import com.bigwharf.tingshu.model.system.SysUserRole;
-import com.bigwharf.tingshu.system.mapper.SysRoleMapper;
-import com.bigwharf.tingshu.system.mapper.SysUserRoleMapper;
-import com.bigwharf.tingshu.system.service.SysRoleService;
-import com.bigwharf.tingshu.vo.system.AssginRoleVo;
-import com.bigwharf.tingshu.vo.system.SysRoleQueryVo;
+import com.atguigu.tingshu.model.system.SysRole;
+import com.atguigu.tingshu.model.system.SysUserRole;
+import com.atguigu.tingshu.system.mapper.SysRoleMapper;
+import com.atguigu.tingshu.system.mapper.SysUserRoleMapper;
+import com.atguigu.tingshu.system.service.SysRoleService;
+import com.atguigu.tingshu.vo.system.AssginRoleVo;
+import com.atguigu.tingshu.vo.system.SysRoleQueryVo;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;

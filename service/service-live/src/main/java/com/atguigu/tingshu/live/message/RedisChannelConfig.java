@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.live.message;
+package com.atguigu.tingshu.live.message;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

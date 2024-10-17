@@ -1,9 +1,9 @@
-package com.bigwharf.tingshu.system.client.impl;
+package com.atguigu.tingshu.system.client.impl;
 
 
-import com.bigwharf.tingshu.system.client.SysLoginLogFeignClient;
-import com.bigwharf.tingshu.common.result.Result;
-import com.bigwharf.tingshu.model.system.SysLoginLog;
+import com.atguigu.tingshu.system.client.SysLoginLogFeignClient;
+import com.atguigu.tingshu.common.result.Result;
+import com.atguigu.tingshu.model.system.SysLoginLog;
 import org.springframework.stereotype.Component;
 
 @Component

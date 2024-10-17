@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.search.api;
+package com.atguigu.tingshu.search.api;
 
-import com.bigwharf.tingshu.search.service.SearchService;
+import com.atguigu.tingshu.search.service.SearchService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.common.config.knife4j;
+package com.atguigu.tingshu.common.config.knife4j;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;

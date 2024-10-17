@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.vo.user;
+package com.atguigu.tingshu.vo.user;
 
 import lombok.Data;
 

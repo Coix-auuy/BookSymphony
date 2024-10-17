@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.model.album;
+package com.atguigu.tingshu.model.album;
 
-import com.bigwharf.tingshu.model.base.BaseEntity;
+import com.atguigu.tingshu.model.base.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableField;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotNull;

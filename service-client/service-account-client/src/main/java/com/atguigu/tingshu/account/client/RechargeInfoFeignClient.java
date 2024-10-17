@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.account.client;
+package com.atguigu.tingshu.account.client;
 
-import com.bigwharf.tingshu.account.client.impl.RechargeInfoDegradeFeignClient;
+import com.atguigu.tingshu.account.client.impl.RechargeInfoDegradeFeignClient;
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**

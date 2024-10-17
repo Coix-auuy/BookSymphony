@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu;
+package com.atguigu.tingshu;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

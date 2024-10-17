@@ -1,11 +1,11 @@
-package com.bigwharf.tingshu.system.controller;
+package com.atguigu.tingshu.system.controller;
 
-import com.bigwharf.tingshu.common.annotation.Log;
-import com.bigwharf.tingshu.common.enums.BusinessType;
-import com.bigwharf.tingshu.common.result.Result;
-import com.bigwharf.tingshu.model.system.SysMenu;
-import com.bigwharf.tingshu.system.service.SysMenuService;
-import com.bigwharf.tingshu.vo.system.AssginMenuVo;
+import com.atguigu.tingshu.common.annotation.Log;
+import com.atguigu.tingshu.common.enums.BusinessType;
+import com.atguigu.tingshu.common.result.Result;
+import com.atguigu.tingshu.model.system.SysMenu;
+import com.atguigu.tingshu.system.service.SysMenuService;
+import com.atguigu.tingshu.vo.system.AssginMenuVo;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;

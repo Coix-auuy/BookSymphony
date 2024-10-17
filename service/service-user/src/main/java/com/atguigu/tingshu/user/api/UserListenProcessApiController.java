@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.user.api;
+package com.atguigu.tingshu.user.api;
 
-import com.bigwharf.tingshu.user.service.UserListenProcessService;
+import com.atguigu.tingshu.user.service.UserListenProcessService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

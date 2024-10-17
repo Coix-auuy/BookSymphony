@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.comment.service;
+package com.atguigu.tingshu.comment.service;
 
 public interface CommentService {
 

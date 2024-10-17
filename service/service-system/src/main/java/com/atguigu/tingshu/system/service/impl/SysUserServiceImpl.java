@@ -1,11 +1,11 @@
-package com.bigwharf.tingshu.system.service.impl;
+package com.atguigu.tingshu.system.service.impl;
 
-import com.bigwharf.tingshu.model.system.SysUser;
-import com.bigwharf.tingshu.system.mapper.SysUserMapper;
-import com.bigwharf.tingshu.system.service.SysMenuService;
-import com.bigwharf.tingshu.system.service.SysUserService;
-import com.bigwharf.tingshu.vo.system.RouterVo;
-import com.bigwharf.tingshu.vo.system.SysUserQueryVo;
+import com.atguigu.tingshu.model.system.SysUser;
+import com.atguigu.tingshu.system.mapper.SysUserMapper;
+import com.atguigu.tingshu.system.service.SysMenuService;
+import com.atguigu.tingshu.system.service.SysUserService;
+import com.atguigu.tingshu.vo.system.RouterVo;
+import com.atguigu.tingshu.vo.system.SysUserQueryVo;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;

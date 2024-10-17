@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.model.system;
+package com.atguigu.tingshu.model.system;
 
-import com.bigwharf.tingshu.model.base.BaseEntity;
+import com.atguigu.tingshu.model.base.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.v3.oas.annotations.media.Schema;

@@ -1,9 +1,9 @@
-package com.bigwharf.tingshu.search.client;
+package com.atguigu.tingshu.search.client;
 
-import com.bigwharf.tingshu.search.client.impl.SearchDegradeFeignClient;
-import com.bigwharf.tingshu.common.result.Result;
-import com.bigwharf.tingshu.vo.account.AccountLockResultVo;
-import com.bigwharf.tingshu.vo.account.AccountLockVo;
+import com.atguigu.tingshu.search.client.impl.SearchDegradeFeignClient;
+import com.atguigu.tingshu.common.result.Result;
+import com.atguigu.tingshu.vo.account.AccountLockResultVo;
+import com.atguigu.tingshu.vo.account.AccountLockVo;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

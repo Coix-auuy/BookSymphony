@@ -53,8 +53,8 @@
 
     <!-- 开发环境 -->
     <springProfile name="dev">
-        <!-- com.bigwharf日志记录器：业务程序INFO级别  -->
-        <logger name="com.bigwharf" level="INFO" />
+        <!-- com.atguigu日志记录器：业务程序INFO级别  -->
+        <logger name="com.atguigu" level="INFO" />
         <!-- 根日志记录器：INFO级别  -->
         <root level="INFO">
             <appender-ref ref="CONSOLE" />

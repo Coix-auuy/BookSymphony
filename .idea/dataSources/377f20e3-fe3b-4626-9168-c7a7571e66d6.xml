@@ -1031,35 +1031,35 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="279" parent="1" name="tingshu_account">
-      <LastIntrospectionLocalTimestamp>2024-10-09.12:31:50</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-10-14.07:24:22</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="280" parent="1" name="tingshu_album">
-      <LastIntrospectionLocalTimestamp>2024-10-09.12:31:51</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-10-14.07:24:34</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="281" parent="1" name="tingshu_dispatch">
-      <LastIntrospectionLocalTimestamp>2024-10-09.12:31:51</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-10-14.07:24:22</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="282" parent="1" name="tingshu_live">
-      <LastIntrospectionLocalTimestamp>2024-10-09.12:31:51</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-10-14.07:24:22</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="283" parent="1" name="tingshu_order">
-      <LastIntrospectionLocalTimestamp>2024-10-09.12:31:51</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-10-14.07:24:22</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="284" parent="1" name="tingshu_payment">
-      <LastIntrospectionLocalTimestamp>2024-10-09.12:31:51</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-10-14.07:24:22</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="285" parent="1" name="tingshu_system">
-      <LastIntrospectionLocalTimestamp>2024-10-09.12:31:51</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-10-14.07:24:22</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="286" parent="1" name="tingshu_user">
-      <LastIntrospectionLocalTimestamp>2024-10-09.12:31:51</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-10-14.07:24:23</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="287" parent="1" name="canal"/>
@@ -1876,7 +1876,7 @@ status</ColNames>
       <StoredType>bigint|0s</StoredType>
     </column>
     <column id="433" parent="299" name="stat_type">
-      <Comment>统计类型：0401-播放量 0402-订阅量 0403-购买量 0403-评论数</Comment>
+      <Comment>统计类型：0401-播放量 0402-订阅量 0403-浏览量 0404-评论数</Comment>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>3</Position>
@@ -1924,7 +1924,7 @@ status</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="441" parent="300" name="id">
-      <AutoIncrement>19</AutoIncrement>
+      <AutoIncrement>20</AutoIncrement>
       <Comment>ID</Comment>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1979,7 +1979,7 @@ status</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="450" parent="301" name="id">
-      <AutoIncrement>40</AutoIncrement>
+      <AutoIncrement>41</AutoIncrement>
       <Comment>ID</Comment>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -2034,7 +2034,7 @@ status</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="459" parent="302" name="id">
-      <AutoIncrement>15</AutoIncrement>
+      <AutoIncrement>16</AutoIncrement>
       <Comment>编号</Comment>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -2084,7 +2084,7 @@ status</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="467" parent="303" name="id">
-      <AutoIncrement>192</AutoIncrement>
+      <AutoIncrement>193</AutoIncrement>
       <Comment>编号</Comment>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -2145,7 +2145,7 @@ status</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="477" parent="304" name="id">
-      <AutoIncrement>1401</AutoIncrement>
+      <AutoIncrement>1402</AutoIncrement>
       <Comment>编号</Comment>
       <NotNull>1</NotNull>
       <Position>1</Position>

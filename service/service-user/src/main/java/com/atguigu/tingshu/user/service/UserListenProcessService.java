@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.user.service;
+package com.atguigu.tingshu.user.service;
 
 public interface UserListenProcessService {
 

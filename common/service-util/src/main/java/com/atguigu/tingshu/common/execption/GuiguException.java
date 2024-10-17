@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.common.execption;
+package com.atguigu.tingshu.common.execption;
 
-import com.bigwharf.tingshu.common.result.ResultCodeEnum;
+import com.atguigu.tingshu.common.result.ResultCodeEnum;
 import lombok.Data;
 
 /**

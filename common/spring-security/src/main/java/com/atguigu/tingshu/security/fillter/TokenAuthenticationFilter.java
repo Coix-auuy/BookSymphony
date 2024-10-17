@@ -1,12 +1,12 @@
-package com.bigwharf.tingshu.security.fillter;
+package com.atguigu.tingshu.security.fillter;
 
 
 import com.alibaba.fastjson.JSON;
-import com.bigwharf.tingshu.common.result.Result;
-import com.bigwharf.tingshu.common.result.ResultCodeEnum;
-import com.bigwharf.tingshu.common.util.AuthContextHolder;
-import com.bigwharf.tingshu.common.util.ResponseUtil;
-import com.bigwharf.tingshu.model.system.SysUser;
+import com.atguigu.tingshu.common.result.Result;
+import com.atguigu.tingshu.common.result.ResultCodeEnum;
+import com.atguigu.tingshu.common.util.AuthContextHolder;
+import com.atguigu.tingshu.common.util.ResponseUtil;
+import com.atguigu.tingshu.model.system.SysUser;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

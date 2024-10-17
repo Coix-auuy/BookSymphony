@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.payment.util;
+package com.atguigu.tingshu.payment.util;
 
 import jakarta.servlet.http.HttpServletRequest;
 

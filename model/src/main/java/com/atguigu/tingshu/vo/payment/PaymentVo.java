@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.vo.payment;
+package com.atguigu.tingshu.vo.payment;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

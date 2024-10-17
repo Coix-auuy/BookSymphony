@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.system.service;
+package com.atguigu.tingshu.system.service;
 
-import com.bigwharf.tingshu.model.system.SysDept;
+import com.atguigu.tingshu.model.system.SysDept;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;

@@ -1,10 +1,10 @@
-package com.bigwharf.tingshu.common.aspect;
+package com.atguigu.tingshu.common.aspect;
 
 import com.alibaba.fastjson.JSON;
-import com.bigwharf.tingshu.system.client.SysOperLogFeignClient;
-import com.bigwharf.tingshu.common.annotation.Log;
-import com.bigwharf.tingshu.common.util.IpUtil;
-import com.bigwharf.tingshu.model.system.SysOperLog;
+import com.atguigu.tingshu.system.client.SysOperLogFeignClient;
+import com.atguigu.tingshu.common.annotation.Log;
+import com.atguigu.tingshu.common.util.IpUtil;
+import com.atguigu.tingshu.model.system.SysOperLog;
 import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

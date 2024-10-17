@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.search.service;
+package com.atguigu.tingshu.search.service;
 
 public interface SearchService {
 

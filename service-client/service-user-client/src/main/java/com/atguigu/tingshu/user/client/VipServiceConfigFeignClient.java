@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.user.client;
+package com.atguigu.tingshu.user.client;
 
-import com.bigwharf.tingshu.user.client.impl.VipServiceConfigDegradeFeignClient;
+import com.atguigu.tingshu.user.client.impl.VipServiceConfigDegradeFeignClient;
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**

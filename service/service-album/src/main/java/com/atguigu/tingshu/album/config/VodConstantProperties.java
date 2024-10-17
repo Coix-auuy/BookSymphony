@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.album.config;
+package com.atguigu.tingshu.album.config;
 
 
 import lombok.Data;
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 @Data
 public class VodConstantProperties {
 
-    private Integer appId;
+    private Long appId;
     private String secretId;
     private String secretKey;
     //https://cloud.tencent.com/document/api/266/31756#.E5.9C.B0.E5.9F.9F.E5.88.97.E8.A1.A8

@@ -1,7 +1,7 @@
-package com.bigwharf.tingshu.system.mapper;
+package com.atguigu.tingshu.system.mapper;
 
 
-import com.bigwharf.tingshu.model.system.SysMenu;
+import com.atguigu.tingshu.model.system.SysMenu;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

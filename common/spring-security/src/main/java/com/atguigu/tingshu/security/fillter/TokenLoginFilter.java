@@ -1,14 +1,14 @@
-package com.bigwharf.tingshu.security.fillter;
+package com.atguigu.tingshu.security.fillter;
 
 
-import com.bigwharf.tingshu.system.client.SysLoginLogFeignClient;
-import com.bigwharf.tingshu.common.result.Result;
-import com.bigwharf.tingshu.common.result.ResultCodeEnum;
-import com.bigwharf.tingshu.common.util.IpUtil;
-import com.bigwharf.tingshu.common.util.ResponseUtil;
-import com.bigwharf.tingshu.model.system.SysLoginLog;
-import com.bigwharf.tingshu.security.custom.CustomUser;
-import com.bigwharf.tingshu.vo.system.LoginVo;
+import com.atguigu.tingshu.system.client.SysLoginLogFeignClient;
+import com.atguigu.tingshu.common.result.Result;
+import com.atguigu.tingshu.common.result.ResultCodeEnum;
+import com.atguigu.tingshu.common.util.IpUtil;
+import com.atguigu.tingshu.common.util.ResponseUtil;
+import com.atguigu.tingshu.model.system.SysLoginLog;
+import com.atguigu.tingshu.security.custom.CustomUser;
+import com.atguigu.tingshu.vo.system.LoginVo;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

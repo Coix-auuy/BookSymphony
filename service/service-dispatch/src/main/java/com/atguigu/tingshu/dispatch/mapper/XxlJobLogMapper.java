@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.dispatch.mapper;
+package com.atguigu.tingshu.dispatch.mapper;
 
-import com.bigwharf.tingshu.model.dispatch.XxlJobLog;
+import com.atguigu.tingshu.model.dispatch.XxlJobLog;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 

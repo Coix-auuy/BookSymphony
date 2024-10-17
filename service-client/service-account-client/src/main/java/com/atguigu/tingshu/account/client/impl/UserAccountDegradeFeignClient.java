@@ -1,7 +1,7 @@
-package com.bigwharf.tingshu.account.client.impl;
+package com.atguigu.tingshu.account.client.impl;
 
 
-import com.bigwharf.tingshu.account.client.UserAccountFeignClient;
+import com.atguigu.tingshu.account.client.UserAccountFeignClient;
 import org.springframework.stereotype.Component;
 
 @Component

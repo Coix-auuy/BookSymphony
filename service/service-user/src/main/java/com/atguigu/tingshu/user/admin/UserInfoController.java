@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.user.admin;
+package com.atguigu.tingshu.user.admin;
 
-import com.bigwharf.tingshu.user.service.UserInfoService;
+import com.atguigu.tingshu.user.service.UserInfoService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,7 +1,7 @@
-package com.bigwharf.tingshu.system.helper;
+package com.atguigu.tingshu.system.helper;
 
 
-import com.bigwharf.tingshu.model.system.SysDept;
+import com.atguigu.tingshu.model.system.SysDept;
 
 import java.util.ArrayList;
 import java.util.List;

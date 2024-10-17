@@ -1,9 +1,9 @@
-package com.bigwharf.tingshu.system.service.impl;//package com.bigwharf.tingshu.system.service.impl;
+package com.atguigu.tingshu.system.service.impl;//package com.atguigu.tingshu.system.service.impl;
 //
-//import com.bigwharf.tingshu.model.system.SysUser;
-//import com.bigwharf.tingshu.security.custom.CustomUser;
-//import com.bigwharf.tingshu.system.service.SysMenuService;
-//import com.bigwharf.tingshu.system.service.SysUserService;
+//import com.atguigu.tingshu.model.system.SysUser;
+//import com.atguigu.tingshu.security.custom.CustomUser;
+//import com.atguigu.tingshu.system.service.SysMenuService;
+//import com.atguigu.tingshu.system.service.SysUserService;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.security.core.userdetails.UserDetails;
 //import org.springframework.security.core.userdetails.UserDetailsService;

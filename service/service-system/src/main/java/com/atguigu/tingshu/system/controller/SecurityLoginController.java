@@ -1,11 +1,11 @@
-package com.bigwharf.tingshu.system.controller;
+package com.atguigu.tingshu.system.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.bigwharf.tingshu.common.result.Result;
-import com.bigwharf.tingshu.model.system.SysUser;
-import com.bigwharf.tingshu.system.service.SysMenuService;
-import com.bigwharf.tingshu.system.service.SysUserService;
-import com.bigwharf.tingshu.vo.system.LoginVo;
+import com.atguigu.tingshu.common.result.Result;
+import com.atguigu.tingshu.model.system.SysUser;
+import com.atguigu.tingshu.system.service.SysMenuService;
+import com.atguigu.tingshu.system.service.SysUserService;
+import com.atguigu.tingshu.vo.system.LoginVo;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.annotation.Resource;

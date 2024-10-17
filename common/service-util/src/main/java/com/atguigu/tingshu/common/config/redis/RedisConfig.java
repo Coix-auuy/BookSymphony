@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.common.config.redis;
+package com.atguigu.tingshu.common.config.redis;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;

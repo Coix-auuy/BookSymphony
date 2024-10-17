@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.common.enums;
+package com.atguigu.tingshu.common.enums;
 
 /**
  * 操作人类别

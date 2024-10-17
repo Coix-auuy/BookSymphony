@@ -10,7 +10,7 @@
         <!-- 版本对应： https://start.spring.io/actuator/info -->
     </parent>
 
-    <groupId>com.bigwharf.tingshu</groupId>
+    <groupId>com.atguigu.tingshu</groupId>
     <artifactId>tingshu</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>

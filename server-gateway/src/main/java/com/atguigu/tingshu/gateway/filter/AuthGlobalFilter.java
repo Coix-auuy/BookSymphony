@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.gateway.filter;
+package com.atguigu.tingshu.gateway.filter;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;

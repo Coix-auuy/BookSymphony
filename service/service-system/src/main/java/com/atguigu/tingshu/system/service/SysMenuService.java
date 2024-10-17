@@ -1,9 +1,9 @@
-package com.bigwharf.tingshu.system.service;
+package com.atguigu.tingshu.system.service;
 
 
-import com.bigwharf.tingshu.model.system.SysMenu;
-import com.bigwharf.tingshu.vo.system.AssginMenuVo;
-import com.bigwharf.tingshu.vo.system.RouterVo;
+import com.atguigu.tingshu.model.system.SysMenu;
+import com.atguigu.tingshu.vo.system.AssginMenuVo;
+import com.atguigu.tingshu.vo.system.RouterVo;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;

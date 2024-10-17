@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.common.config.mybatisPlus;
+package com.atguigu.tingshu.common.config.mybatisPlus;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 @EnableTransactionManagement
 @Configuration
-@MapperScan("com.bigwharf.tingshu.*.mapper")
+@MapperScan("com.atguigu.tingshu.*.mapper")
 public class MybatisPlusConfig {
 
     /**

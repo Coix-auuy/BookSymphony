@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.common.enums;
+package com.atguigu.tingshu.common.enums;
 
 /**
  * 业务操作类型

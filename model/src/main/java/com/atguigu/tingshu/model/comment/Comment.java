@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.model.comment;
+package com.atguigu.tingshu.model.comment;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

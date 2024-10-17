@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.vo.search;
+package com.atguigu.tingshu.vo.search;
 
 import lombok.Data;
 

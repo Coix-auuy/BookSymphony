@@ -1,8 +1,8 @@
-package com.bigwharf.tingshu.system.service;
+package com.atguigu.tingshu.system.service;
 
-import com.bigwharf.tingshu.model.system.SysRole;
-import com.bigwharf.tingshu.vo.system.AssginRoleVo;
-import com.bigwharf.tingshu.vo.system.SysRoleQueryVo;
+import com.atguigu.tingshu.model.system.SysRole;
+import com.atguigu.tingshu.vo.system.AssginRoleVo;
+import com.atguigu.tingshu.vo.system.SysRoleQueryVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;

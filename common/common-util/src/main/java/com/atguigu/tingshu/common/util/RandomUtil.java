@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.common.util;
+package com.atguigu.tingshu.common.util;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;

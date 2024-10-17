@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.model.search;
+package com.atguigu.tingshu.model.search;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;

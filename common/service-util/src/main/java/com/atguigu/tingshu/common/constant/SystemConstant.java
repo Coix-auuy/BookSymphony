@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.common.constant;
+package com.atguigu.tingshu.common.constant;
 
 public class SystemConstant {
 

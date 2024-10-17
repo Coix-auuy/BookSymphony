@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.payment.config;
+package com.atguigu.tingshu.payment.config;
 
 import com.wechat.pay.java.core.RSAAutoCertificateConfig;
 import lombok.Data;

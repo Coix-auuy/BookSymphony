@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.account.client;
+package com.atguigu.tingshu.account.client;
 
-import com.bigwharf.tingshu.account.client.impl.UserAccountDegradeFeignClient;
+import com.atguigu.tingshu.account.client.impl.UserAccountDegradeFeignClient;
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**

@@ -1,10 +1,10 @@
-package com.bigwharf.tingshu.system.controller;
+package com.atguigu.tingshu.system.controller;
 
-import com.bigwharf.tingshu.common.result.Result;
-import com.bigwharf.tingshu.common.util.AuthContextHolder;
-import com.bigwharf.tingshu.model.system.SysOperLog;
-import com.bigwharf.tingshu.system.service.SysOperLogService;
-import com.bigwharf.tingshu.vo.system.SysOperLogQueryVo;
+import com.atguigu.tingshu.common.result.Result;
+import com.atguigu.tingshu.common.util.AuthContextHolder;
+import com.atguigu.tingshu.model.system.SysOperLog;
+import com.atguigu.tingshu.system.service.SysOperLogService;
+import com.atguigu.tingshu.vo.system.SysOperLogQueryVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.v3.oas.annotations.Operation;

@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.common.util;
+package com.atguigu.tingshu.common.util;
 
-import com.bigwharf.tingshu.common.result.Result;
+import com.atguigu.tingshu.common.result.Result;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.http.HttpStatus;

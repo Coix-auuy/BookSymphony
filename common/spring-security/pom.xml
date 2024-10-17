@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.bigwharf.tingshu</groupId>
+        <groupId>com.atguigu.tingshu</groupId>
         <artifactId>common</artifactId>
         <version>1.0</version>
     </parent>
@@ -15,12 +15,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.bigwharf.tingshu</groupId>
+            <groupId>com.atguigu.tingshu</groupId>
             <artifactId>common-util</artifactId>
             <version>1.0</version>
         </dependency>
         <dependency>
-            <groupId>com.bigwharf.tingshu</groupId>
+            <groupId>com.atguigu.tingshu</groupId>
             <artifactId>service-system-client</artifactId>
             <version>1.0</version>
         </dependency>
@@ -35,7 +35,7 @@
             <scope>provided </scope>
         </dependency>
         <dependency>
-            <groupId>com.bigwharf.tingshu</groupId>
+            <groupId>com.atguigu.tingshu</groupId>
             <artifactId>model</artifactId>
             <version>1.0</version>
             <scope>compile</scope>

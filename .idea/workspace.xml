@@ -4,12 +4,400 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a271840d-fb25-4606-b81b-5bb69b89eb91" name="Changes" comment="" />
+    <list default="true" id="a271840d-fb25-4606-b81b-5bb69b89eb91" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/377f20e3-fe3b-4626-9168-c7a7571e66d6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/377f20e3-fe3b-4626-9168-c7a7571e66d6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-log/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-log/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-log/src/main/java/com/atguigu/tingshu/common/annotation/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-log/src/main/java/com/atguigu/tingshu/common/annotation/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-log/src/main/java/com/atguigu/tingshu/common/aspect/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-log/src/main/java/com/atguigu/tingshu/common/aspect/LogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-log/src/main/java/com/atguigu/tingshu/common/enums/BusinessType.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-log/src/main/java/com/atguigu/tingshu/common/enums/BusinessType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-log/src/main/java/com/atguigu/tingshu/common/enums/OperatorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-log/src/main/java/com/atguigu/tingshu/common/enums/OperatorType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/result/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/result/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/result/ResultCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/AuthContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/AuthContextHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/Decimal2Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/Decimal2Serializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/ExceptionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/ExceptionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/HttpClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/HttpClientUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/IpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/IpUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/MD5.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/MD5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/MongoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/MongoUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/PinYinUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/PinYinUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/RandomUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/RandomUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/ResponseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/ResponseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/SensitiveWordFilterUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/SensitiveWordFilterUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/UploadFileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/tingshu/common/util/UploadFileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/kafka-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/kafka-util/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/kafka-util/src/main/java/com/atguigu/tingshu/common/constant/KafkaConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/kafka-util/src/main/java/com/atguigu/tingshu/common/constant/KafkaConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/kafka-util/src/main/java/com/atguigu/tingshu/common/service/KafkaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/kafka-util/src/main/java/com/atguigu/tingshu/common/service/KafkaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/tingshu/common/config/knife4j/Knife4jConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/tingshu/common/config/knife4j/Knife4jConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/tingshu/common/config/mybatisPlus/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/tingshu/common/config/mybatisPlus/MybatisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/tingshu/common/config/redis/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/tingshu/common/config/redis/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/tingshu/common/constant/RedisConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/tingshu/common/constant/RedisConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/tingshu/common/constant/SystemConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/tingshu/common/constant/SystemConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/tingshu/common/execption/GuiguException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/tingshu/common/execption/GuiguException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/tingshu/common/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/tingshu/common/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/tingshu/common/interceptor/FeignInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/tingshu/common/interceptor/FeignInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/spring-security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/spring-security/src/main/java/com/atguigu/tingshu/security/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/src/main/java/com/atguigu/tingshu/security/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/spring-security/src/main/java/com/atguigu/tingshu/security/custom/CustomAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/src/main/java/com/atguigu/tingshu/security/custom/CustomAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/spring-security/src/main/java/com/atguigu/tingshu/security/custom/CustomMd5PasswordEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/src/main/java/com/atguigu/tingshu/security/custom/CustomMd5PasswordEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/spring-security/src/main/java/com/atguigu/tingshu/security/custom/CustomUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/src/main/java/com/atguigu/tingshu/security/custom/CustomUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/spring-security/src/main/java/com/atguigu/tingshu/security/fillter/TokenAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/src/main/java/com/atguigu/tingshu/security/fillter/TokenAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/spring-security/src/main/java/com/atguigu/tingshu/security/fillter/TokenLoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/src/main/java/com/atguigu/tingshu/security/fillter/TokenLoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/spring-security/src/main/java/com/atguigu/tingshu/security/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/src/main/java/com/atguigu/tingshu/security/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/account/RechargeInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/account/RechargeInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/account/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/account/UserAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/account/UserAccountDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/account/UserAccountDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/AlbumAttributeValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/AlbumAttributeValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/AlbumInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/AlbumInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/AlbumStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/AlbumStat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/BaseAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/BaseAttribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/BaseAttributeValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/BaseAttributeValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/BaseCategory1.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/BaseCategory1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/BaseCategory2.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/BaseCategory2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/BaseCategory3.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/BaseCategory3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/BaseCategoryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/BaseCategoryView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/BaseDic.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/BaseDic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/TrackInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/TrackInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/TrackStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/album/TrackStat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/base/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/base/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/comment/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/comment/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/comment/CommentPraise.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/comment/CommentPraise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/dispatch/XxlJobConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/dispatch/XxlJobConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/dispatch/XxlJobLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/dispatch/XxlJobLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/live/FromUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/live/FromUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/live/LiveRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/live/LiveRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/live/LiveTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/live/LiveTag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/live/SocketMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/live/SocketMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/order/OrderDerate.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/order/OrderDerate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/order/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/order/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/order/OrderInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/order/OrderInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/payment/PaymentInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/payment/PaymentInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/search/AlbumInfoIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/search/AlbumInfoIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/search/AttributeValueIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/search/AttributeValueIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/search/SuggestIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/search/SuggestIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/system/SysDept.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/system/SysDept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/system/SysLoginLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/system/SysLoginLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/system/SysMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/system/SysMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/system/SysOperLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/system/SysOperLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/system/SysPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/system/SysPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/system/SysRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/system/SysRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/system/SysRoleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/system/SysRoleMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/system/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/system/SysUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/system/SysUserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/system/SysUserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/UserCertification.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/UserCertification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/UserCollect.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/UserCollect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/UserListenProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/UserListenProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/UserPaidAlbum.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/UserPaidAlbum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/UserPaidTrack.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/UserPaidTrack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/UserStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/UserStat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/UserSubscribe.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/UserSubscribe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/UserVipService.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/UserVipService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/VipServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/model/user/VipServiceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/query/album/AlbumInfoQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/query/album/AlbumInfoQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/query/album/TrackInfoQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/query/album/TrackInfoQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/query/order/OrderInfoQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/query/order/OrderInfoQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/query/search/AlbumIndexQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/query/search/AlbumIndexQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/query/user/UserInfoQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/query/user/UserInfoQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/validation/NotEmptyPaid.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/validation/NotEmptyPaid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/validation/NotEmptyPaidValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/validation/NotEmptyPaidValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/account/AccountLockResultVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/account/AccountLockResultVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/account/AccountLockVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/account/AccountLockVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/account/RechargeInfoVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/account/RechargeInfoVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/AlbumAttributeValueVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/AlbumAttributeValueVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/AlbumInfoVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/AlbumInfoVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/AlbumListVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/AlbumListVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/AlbumStatMqVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/AlbumStatMqVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/AlbumStatVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/AlbumStatVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/AlbumTrackListVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/AlbumTrackListVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/TrackInfoVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/TrackInfoVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/TrackListVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/TrackListVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/TrackMediaInfoVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/TrackMediaInfoVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/TrackStatMqVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/TrackStatMqVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/TrackStatVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/album/TrackStatVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/base/PageVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/base/PageVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/comment/CommentVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/comment/CommentVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/live/LiveRoomVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/live/LiveRoomVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/live/TencentLiveAddressVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/live/TencentLiveAddressVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/order/OrderDerateVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/order/OrderDerateVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/order/OrderDetailVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/order/OrderDetailVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/order/OrderInfoVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/order/OrderInfoVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/order/TradeResponeVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/order/TradeResponeVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/order/TradeVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/order/TradeVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/payment/PaymentVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/payment/PaymentVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/search/AlbumInfoIndexVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/search/AlbumInfoIndexVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/search/AlbumSearchResponseVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/search/AlbumSearchResponseVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/search/AlbumSearchVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/search/AlbumSearchVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/AssginMenuVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/AssginMenuVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/AssginRoleVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/AssginRoleVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/LoginVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/LoginVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/MetaVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/MetaVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/RouterVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/RouterVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/SysLoginLogQueryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/SysLoginLogQueryVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/SysOperLogQueryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/SysOperLogQueryVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/SysPostQueryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/SysPostQueryVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/SysRoleQueryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/SysRoleQueryVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/SysUserQueryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/system/SysUserQueryVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/user/LoginVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/user/LoginVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/user/UserCollectVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/user/UserCollectVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/user/UserInfoVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/user/UserInfoVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/user/UserListenProcessListVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/user/UserListenProcessListVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/user/UserListenProcessVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/user/UserListenProcessVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/user/UserPaidRecordVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/user/UserPaidRecordVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/user/UserSubscribeVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/user/UserSubscribeVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/user/UserUpdateVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/tingshu/vo/user/UserUpdateVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-gateway/src/main/java/com/atguigu/tingshu/ServerGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-gateway/src/main/java/com/atguigu/tingshu/ServerGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-gateway/src/main/java/com/atguigu/tingshu/gateway/filter/AuthGlobalFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-gateway/src/main/java/com/atguigu/tingshu/gateway/filter/AuthGlobalFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-gateway/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server-gateway/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-account-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-account-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-account-client/src/main/java/com/atguigu/tingshu/account/client/RechargeInfoFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-account-client/src/main/java/com/atguigu/tingshu/account/client/RechargeInfoFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-account-client/src/main/java/com/atguigu/tingshu/account/client/UserAccountFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-account-client/src/main/java/com/atguigu/tingshu/account/client/UserAccountFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-account-client/src/main/java/com/atguigu/tingshu/account/client/impl/RechargeInfoDegradeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-account-client/src/main/java/com/atguigu/tingshu/account/client/impl/RechargeInfoDegradeFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-account-client/src/main/java/com/atguigu/tingshu/account/client/impl/UserAccountDegradeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-account-client/src/main/java/com/atguigu/tingshu/account/client/impl/UserAccountDegradeFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-album-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-album-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-album-client/src/main/java/com/atguigu/tingshu/album/client/AlbumInfoFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-album-client/src/main/java/com/atguigu/tingshu/album/client/AlbumInfoFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-album-client/src/main/java/com/atguigu/tingshu/album/client/CategoryFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-album-client/src/main/java/com/atguigu/tingshu/album/client/CategoryFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-album-client/src/main/java/com/atguigu/tingshu/album/client/TrackInfoFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-album-client/src/main/java/com/atguigu/tingshu/album/client/TrackInfoFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-album-client/src/main/java/com/atguigu/tingshu/album/client/impl/AlbumInfoDegradeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-album-client/src/main/java/com/atguigu/tingshu/album/client/impl/AlbumInfoDegradeFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-album-client/src/main/java/com/atguigu/tingshu/album/client/impl/CategoryDegradeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-album-client/src/main/java/com/atguigu/tingshu/album/client/impl/CategoryDegradeFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-album-client/src/main/java/com/atguigu/tingshu/album/client/impl/TrackInfoDegradeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-album-client/src/main/java/com/atguigu/tingshu/album/client/impl/TrackInfoDegradeFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-order-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-order-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-order-client/src/main/java/com/atguigu/tingshu/order/client/OrderInfoFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-order-client/src/main/java/com/atguigu/tingshu/order/client/OrderInfoFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-order-client/src/main/java/com/atguigu/tingshu/order/client/impl/OrderInfoDegradeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-order-client/src/main/java/com/atguigu/tingshu/order/client/impl/OrderInfoDegradeFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-search-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-search-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-search-client/src/main/java/com/atguigu/tingshu/search/client/SearchFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-search-client/src/main/java/com/atguigu/tingshu/search/client/SearchFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-search-client/src/main/java/com/atguigu/tingshu/search/client/impl/SearchDegradeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-search-client/src/main/java/com/atguigu/tingshu/search/client/impl/SearchDegradeFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-system-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-system-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-system-client/src/main/java/com/atguigu/tingshu/system/client/SecurityLoginFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-system-client/src/main/java/com/atguigu/tingshu/system/client/SecurityLoginFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-system-client/src/main/java/com/atguigu/tingshu/system/client/SysLoginLogFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-system-client/src/main/java/com/atguigu/tingshu/system/client/SysLoginLogFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-system-client/src/main/java/com/atguigu/tingshu/system/client/SysOperLogFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-system-client/src/main/java/com/atguigu/tingshu/system/client/SysOperLogFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-system-client/src/main/java/com/atguigu/tingshu/system/client/impl/SecurityLoginDegradeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-system-client/src/main/java/com/atguigu/tingshu/system/client/impl/SecurityLoginDegradeFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-system-client/src/main/java/com/atguigu/tingshu/system/client/impl/SysLoginLogDegradeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-system-client/src/main/java/com/atguigu/tingshu/system/client/impl/SysLoginLogDegradeFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-system-client/src/main/java/com/atguigu/tingshu/system/client/impl/SysOperLogDegradeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-system-client/src/main/java/com/atguigu/tingshu/system/client/impl/SysOperLogDegradeFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-user-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-user-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-user-client/src/main/java/com/atguigu/tingshu/user/client/UserInfoFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-user-client/src/main/java/com/atguigu/tingshu/user/client/UserInfoFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-user-client/src/main/java/com/atguigu/tingshu/user/client/UserListenProcessFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-user-client/src/main/java/com/atguigu/tingshu/user/client/UserListenProcessFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-user-client/src/main/java/com/atguigu/tingshu/user/client/VipServiceConfigFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-user-client/src/main/java/com/atguigu/tingshu/user/client/VipServiceConfigFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-user-client/src/main/java/com/atguigu/tingshu/user/client/impl/UserInfoDegradeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-user-client/src/main/java/com/atguigu/tingshu/user/client/impl/UserInfoDegradeFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-user-client/src/main/java/com/atguigu/tingshu/user/client/impl/UserListenProcessDegradeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-user-client/src/main/java/com/atguigu/tingshu/user/client/impl/UserListenProcessDegradeFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-user-client/src/main/java/com/atguigu/tingshu/user/client/impl/VipServiceConfigDegradeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-user-client/src/main/java/com/atguigu/tingshu/user/client/impl/VipServiceConfigDegradeFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-account/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-account/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/ServiceAccountApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/ServiceAccountApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/account/api/RechargeInfoApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/account/api/RechargeInfoApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/account/api/UserAccountApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/account/api/UserAccountApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/account/mapper/RechargeInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/account/mapper/RechargeInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/account/mapper/UserAccountDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/account/mapper/UserAccountDetailMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/account/mapper/UserAccountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/account/mapper/UserAccountMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/account/service/RechargeInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/account/service/RechargeInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/account/service/UserAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/account/service/UserAccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/account/service/impl/RechargeInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/account/service/impl/RechargeInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/account/service/impl/UserAccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-account/src/main/java/com/atguigu/tingshu/account/service/impl/UserAccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-account/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-account/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-account/src/main/resources/mapper/UserAccountDetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-account/src/main/resources/mapper/UserAccountDetailMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-account/src/main/resources/mapper/UserAccountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-account/src/main/resources/mapper/UserAccountMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/ServiceAlbumApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/ServiceAlbumApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/api/AlbumInfoApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/api/AlbumInfoApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/api/BaseCategoryApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/api/BaseCategoryApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/api/FileUploadApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/api/FileUploadApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/api/TrackInfoApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/api/TrackInfoApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/config/MinioConstantProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/config/MinioConstantProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/config/VodConstantProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/config/VodConstantProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/controller/AlbumInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/controller/AlbumInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/controller/BaseCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/controller/BaseCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/controller/TrackInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/controller/TrackInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/AlbumAttributeValueMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/AlbumAttributeValueMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/AlbumInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/AlbumInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/AlbumStatMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/AlbumStatMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/BaseAttributeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/BaseAttributeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/BaseAttributeValueMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/BaseAttributeValueMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/BaseCategory1Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/BaseCategory1Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/BaseCategory2Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/BaseCategory2Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/BaseCategory3Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/BaseCategory3Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/BaseCategoryViewMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/BaseCategoryViewMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/TrackInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/TrackInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/TrackStatMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/TrackStatMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/AlbumInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/AlbumInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/BaseCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/BaseCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/TrackInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/TrackInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/VodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/VodService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/impl/AlbumInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/impl/AlbumInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/impl/BaseCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/impl/BaseCategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/impl/TrackInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/impl/TrackInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/impl/VodServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/impl/VodServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/resources/mapper/AlbumInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/resources/mapper/AlbumInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/resources/mapper/BaseAttributeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/resources/mapper/BaseAttributeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/resources/mapper/TrackInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/resources/mapper/TrackInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-comment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-comment/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-comment/src/main/java/com/atguigu/tingshu/ServiceCommentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-comment/src/main/java/com/atguigu/tingshu/ServiceCommentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-comment/src/main/java/com/atguigu/tingshu/comment/api/CommentApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-comment/src/main/java/com/atguigu/tingshu/comment/api/CommentApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-comment/src/main/java/com/atguigu/tingshu/comment/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-comment/src/main/java/com/atguigu/tingshu/comment/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-comment/src/main/java/com/atguigu/tingshu/comment/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-comment/src/main/java/com/atguigu/tingshu/comment/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-comment/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-comment/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-dispatch/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-dispatch/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-dispatch/src/main/java/com/atguigu/tingshu/ServiceDispatchApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-dispatch/src/main/java/com/atguigu/tingshu/ServiceDispatchApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-dispatch/src/main/java/com/atguigu/tingshu/dispatch/job/DispatchJobHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-dispatch/src/main/java/com/atguigu/tingshu/dispatch/job/DispatchJobHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-dispatch/src/main/java/com/atguigu/tingshu/dispatch/mapper/XxlJobLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-dispatch/src/main/java/com/atguigu/tingshu/dispatch/mapper/XxlJobLogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-dispatch/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-dispatch/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-live/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-live/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/ServiceLiveApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/ServiceLiveApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/api/LiveRoomApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/api/LiveRoomApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/api/LiveTagApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/api/LiveTagApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/mapper/LiveRoomMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/mapper/LiveRoomMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/mapper/LiveTagMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/mapper/LiveTagMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/message/RedisChannelConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/message/RedisChannelConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/message/RedisMessageReceive.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/message/RedisMessageReceive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/service/LiveRoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/service/LiveRoomService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/service/LiveTagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/service/LiveTagService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/service/impl/LiveRoomServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/service/impl/LiveRoomServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/service/impl/LiveTagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/service/impl/LiveTagServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/util/LiveAutoAddressUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/util/LiveAutoAddressUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/util/WebSocketLocalContainerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-live/src/main/java/com/atguigu/tingshu/live/util/WebSocketLocalContainerUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-live/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-live/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/tingshu/ServiceOrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/tingshu/ServiceOrderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/tingshu/order/admin/OrderInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/tingshu/order/admin/OrderInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/tingshu/order/api/OrderInfoApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/tingshu/order/api/OrderInfoApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/tingshu/order/helper/SignHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/tingshu/order/helper/SignHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/tingshu/order/mapper/OrderDerateMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/tingshu/order/mapper/OrderDerateMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/tingshu/order/mapper/OrderDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/tingshu/order/mapper/OrderDetailMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/tingshu/order/mapper/OrderInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/tingshu/order/mapper/OrderInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/tingshu/order/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/tingshu/order/service/OrderInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/tingshu/order/service/impl/OrderInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/tingshu/order/service/impl/OrderInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/resources/mapper/OrderInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/resources/mapper/OrderInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-payment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-payment/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-payment/src/main/java/com/atguigu/tingshu/ServicePaymentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-payment/src/main/java/com/atguigu/tingshu/ServicePaymentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-payment/src/main/java/com/atguigu/tingshu/payment/api/WxPayApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-payment/src/main/java/com/atguigu/tingshu/payment/api/WxPayApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-payment/src/main/java/com/atguigu/tingshu/payment/config/WxPayV3Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-payment/src/main/java/com/atguigu/tingshu/payment/config/WxPayV3Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-payment/src/main/java/com/atguigu/tingshu/payment/mapper/PaymentInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-payment/src/main/java/com/atguigu/tingshu/payment/mapper/PaymentInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-payment/src/main/java/com/atguigu/tingshu/payment/service/PaymentInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-payment/src/main/java/com/atguigu/tingshu/payment/service/PaymentInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-payment/src/main/java/com/atguigu/tingshu/payment/service/WxPayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-payment/src/main/java/com/atguigu/tingshu/payment/service/WxPayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-payment/src/main/java/com/atguigu/tingshu/payment/service/impl/PaymentInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-payment/src/main/java/com/atguigu/tingshu/payment/service/impl/PaymentInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-payment/src/main/java/com/atguigu/tingshu/payment/service/impl/WxPayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-payment/src/main/java/com/atguigu/tingshu/payment/service/impl/WxPayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-payment/src/main/java/com/atguigu/tingshu/payment/util/PayUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-payment/src/main/java/com/atguigu/tingshu/payment/util/PayUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-payment/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-payment/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-search/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/ServiceSearchApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/ServiceSearchApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/api/SearchApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/api/SearchApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/api/itemApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/api/itemApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/service/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/service/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/service/SearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/service/impl/ItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/service/impl/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/service/impl/SearchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-search/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/ServiceSystemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/ServiceSystemApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/controller/SecurityLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/controller/SecurityLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/controller/SysDeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/controller/SysDeptController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/controller/SysLoginLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/controller/SysLoginLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/controller/SysMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/controller/SysMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/controller/SysOperLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/controller/SysOperLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/controller/SysPostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/controller/SysPostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/controller/SysRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/controller/SysRoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/controller/SysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/helper/DeptHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/helper/DeptHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/helper/MenuHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/helper/MenuHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/mapper/SysDeptMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/mapper/SysDeptMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/mapper/SysLoginLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/mapper/SysLoginLogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/mapper/SysMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/mapper/SysMenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/mapper/SysOperLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/mapper/SysOperLogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/mapper/SysPostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/mapper/SysPostMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/mapper/SysRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/mapper/SysRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/mapper/SysRoleMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/mapper/SysRoleMenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/mapper/SysUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/mapper/SysUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/mapper/SysUserRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/mapper/SysUserRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/SysDeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/SysDeptService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/SysLoginLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/SysLoginLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/SysMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/SysMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/SysOperLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/SysOperLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/SysPostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/SysPostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/SysRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/SysRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/SysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/impl/SysDeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/impl/SysDeptServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/impl/SysLoginLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/impl/SysLoginLogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/impl/SysMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/impl/SysMenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/impl/SysOperLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/impl/SysOperLogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/impl/SysPostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/impl/SysPostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/impl/SysRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/impl/SysRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/impl/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/java/com/atguigu/tingshu/system/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/resources/mapper/SysLoginLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/resources/mapper/SysLoginLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/resources/mapper/SysMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/resources/mapper/SysMenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/resources/mapper/SysOperLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/resources/mapper/SysOperLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/resources/mapper/SysPostMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/resources/mapper/SysPostMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/resources/mapper/SysRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/resources/mapper/SysRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-system/src/main/resources/mapper/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/src/main/resources/mapper/SysUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/ServiceUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/ServiceUserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/admin/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/admin/UserInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/api/UserInfoApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/api/UserInfoApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/api/UserListenProcessApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/api/UserListenProcessApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/api/VipServiceConfigApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/api/VipServiceConfigApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/api/WxLoginApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/api/WxLoginApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/mapper/UserCertificationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/mapper/UserCertificationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/mapper/UserInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/mapper/UserInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/mapper/UserPaidAlbumMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/mapper/UserPaidAlbumMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/mapper/UserPaidTrackMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/mapper/UserPaidTrackMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/mapper/UserStatMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/mapper/UserStatMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/mapper/UserVipServiceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/mapper/UserVipServiceMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/mapper/VipServiceConfigMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/mapper/VipServiceConfigMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/UserInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/UserListenProcessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/UserListenProcessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/UserPaidTrackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/UserPaidTrackService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/VipServiceConfigService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/VipServiceConfigService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/impl/UserInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/impl/UserListenProcessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/impl/UserListenProcessServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/impl/UserPaidTrackServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/impl/UserPaidTrackServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/impl/VipServiceConfigServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/impl/VipServiceConfigServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/resources/mapper/UserInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/resources/mapper/UserInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/资料/DEFAULT_GROUP/service-live-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/资料/DEFAULT_GROUP/service-live-dev.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="mybatis-mapper" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Coix-auuy&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Coix-auuy/BookSymphony.git&quot;,
+    &quot;accountId&quot;: &quot;e8da9e7b-b773-442e-b7a6-58486256d677&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -25,38 +413,55 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2YVafTG7hFwgtrkUKfSrfmxbjKl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/bigwharf/BookSymphony/tingshu/tingshu",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ServerGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ServiceAlbumApplication.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/bigwharf/BookSymphony/tingshu/tingshu&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Code Search&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.atguigu.tingshu.album.service" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.atguigu.tingshu.model.live" />
     </key>
@@ -71,7 +476,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceAccountApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceAlbumApplication">
     <configuration name="ServerGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="server-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.tingshu.ServerGatewayApplication" />
@@ -170,11 +575,45 @@
       <workItem from="1726988853781" duration="106000" />
       <workItem from="1726989005692" duration="23000" />
       <workItem from="1728476017176" duration="88000" />
-      <workItem from="1728476184955" duration="906000" />
+      <workItem from="1728476184955" duration="4075000" />
+      <workItem from="1728481174138" duration="400000" />
+      <workItem from="1728481585226" duration="3341000" />
+      <workItem from="1728616674623" duration="10550000" />
+      <workItem from="1728788170567" duration="15094000" />
+      <workItem from="1728870280380" duration="13472000" />
+      <workItem from="1728959808472" duration="16056000" />
+      <workItem from="1728997517281" duration="3613000" />
+      <workItem from="1729040571821" duration="8443000" />
+      <workItem from="1729126245417" duration="13453000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-websocket" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:io.projectreactor:reactor-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-context" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-messaging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.util.HashMap$Node" memberName="value" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

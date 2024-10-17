@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.user.mapper;
+package com.atguigu.tingshu.user.mapper;
 
-import com.bigwharf.tingshu.model.user.UserStat;
+import com.atguigu.tingshu.model.user.UserStat;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 

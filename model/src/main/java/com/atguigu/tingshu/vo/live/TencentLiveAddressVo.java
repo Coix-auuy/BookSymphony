@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.vo.live;
+package com.atguigu.tingshu.vo.live;
 
 import lombok.Data;
 

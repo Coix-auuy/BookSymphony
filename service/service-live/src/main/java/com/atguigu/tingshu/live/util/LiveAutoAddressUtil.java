@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.live.util;
+package com.atguigu.tingshu.live.util;
 
-import com.bigwharf.tingshu.vo.live.TencentLiveAddressVo;
+import com.atguigu.tingshu.vo.live.TencentLiveAddressVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -22,7 +22,7 @@ public class LiveAutoAddressUtil {
     //  推流域名
     private static String pushDomain = "190649.push.tlivecloud.com"; //云直播控制台配置的推流域名
     //  拉流域名
-    private static String pullDomain = "mqxplay.bigwharf.cn";//云直播控制台配置的拉流域名
+    private static String pullDomain = "mqxplay.atguigu.cn";//云直播控制台配置的拉流域名
     private static String AppName = "live"; //直播SDK-->应用管理-->自己创建应用中的应用名称
 
 

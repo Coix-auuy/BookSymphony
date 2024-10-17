@@ -1,7 +1,7 @@
-package com.bigwharf.tingshu.album.client.impl;
+package com.atguigu.tingshu.album.client.impl;
 
 
-import com.bigwharf.tingshu.album.client.CategoryFeignClient;
+import com.atguigu.tingshu.album.client.CategoryFeignClient;
 import org.springframework.stereotype.Component;
 
 @Component

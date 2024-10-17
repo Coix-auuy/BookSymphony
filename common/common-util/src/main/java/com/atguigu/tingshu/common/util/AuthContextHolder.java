@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.common.util;
+package com.atguigu.tingshu.common.util;
 
 /**
  * 获取当前用户信息帮助类

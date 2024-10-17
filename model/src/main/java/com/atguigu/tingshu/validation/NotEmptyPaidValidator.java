@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.validation;
+package com.atguigu.tingshu.validation;
 
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;

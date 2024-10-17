@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.vo.user;
+package com.atguigu.tingshu.vo.user;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import io.swagger.v3.oas.annotations.media.Schema;

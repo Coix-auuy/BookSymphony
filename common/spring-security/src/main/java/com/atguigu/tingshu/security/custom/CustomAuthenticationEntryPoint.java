@@ -1,8 +1,8 @@
-package com.bigwharf.tingshu.security.custom;
+package com.atguigu.tingshu.security.custom;
 
-import com.bigwharf.tingshu.common.result.Result;
-import com.bigwharf.tingshu.common.result.ResultCodeEnum;
-import com.bigwharf.tingshu.common.util.ResponseUtil;
+import com.atguigu.tingshu.common.result.Result;
+import com.atguigu.tingshu.common.result.ResultCodeEnum;
+import com.atguigu.tingshu.common.util.ResponseUtil;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.security.core.AuthenticationException;

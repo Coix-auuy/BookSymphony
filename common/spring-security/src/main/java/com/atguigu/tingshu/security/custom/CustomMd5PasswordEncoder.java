@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.security.custom;
+package com.atguigu.tingshu.security.custom;
 
-import com.bigwharf.tingshu.common.util.MD5;
+import com.atguigu.tingshu.common.util.MD5;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 

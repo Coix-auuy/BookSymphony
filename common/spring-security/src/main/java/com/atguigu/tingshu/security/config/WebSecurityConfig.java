@@ -1,9 +1,9 @@
-package com.bigwharf.tingshu.security.config;
+package com.atguigu.tingshu.security.config;
 
-import com.bigwharf.tingshu.system.client.SysLoginLogFeignClient;
-import com.bigwharf.tingshu.security.custom.CustomMd5PasswordEncoder;
-import com.bigwharf.tingshu.security.fillter.TokenAuthenticationFilter;
-import com.bigwharf.tingshu.security.fillter.TokenLoginFilter;
+import com.atguigu.tingshu.system.client.SysLoginLogFeignClient;
+import com.atguigu.tingshu.security.custom.CustomMd5PasswordEncoder;
+import com.atguigu.tingshu.security.fillter.TokenAuthenticationFilter;
+import com.atguigu.tingshu.security.fillter.TokenLoginFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

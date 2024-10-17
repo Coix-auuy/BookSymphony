@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.comment.service.impl;
+package com.atguigu.tingshu.comment.service.impl;
 
-import com.bigwharf.tingshu.comment.service.CommentService;
+import com.atguigu.tingshu.comment.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;

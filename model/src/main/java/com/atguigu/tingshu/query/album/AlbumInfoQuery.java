@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.query.album;
+package com.atguigu.tingshu.query.album;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

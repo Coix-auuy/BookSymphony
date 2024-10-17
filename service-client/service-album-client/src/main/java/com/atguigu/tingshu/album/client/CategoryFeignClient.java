@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.album.client;
+package com.atguigu.tingshu.album.client;
 
-import com.bigwharf.tingshu.album.client.impl.CategoryDegradeFeignClient;
+import com.atguigu.tingshu.album.client.impl.CategoryDegradeFeignClient;
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**

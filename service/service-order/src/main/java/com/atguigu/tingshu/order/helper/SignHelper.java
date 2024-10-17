@@ -1,8 +1,8 @@
-package com.bigwharf.tingshu.order.helper;
+package com.atguigu.tingshu.order.helper;
 
-import com.bigwharf.tingshu.common.execption.GuiguException;
-import com.bigwharf.tingshu.common.result.ResultCodeEnum;
-import com.bigwharf.tingshu.common.util.MD5;
+import com.atguigu.tingshu.common.execption.GuiguException;
+import com.atguigu.tingshu.common.result.ResultCodeEnum;
+import com.atguigu.tingshu.common.util.MD5;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.StringUtils;
 
@@ -13,7 +13,7 @@ import java.util.TreeMap;
 @Slf4j
 public class SignHelper {
 
-    private static String signKey = "bigwharf123";
+    private static String signKey = "atguigu123";
     /**
      * 验签方法
      * @param parameterMap

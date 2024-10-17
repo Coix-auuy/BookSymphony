@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.payment.service;
+package com.atguigu.tingshu.payment.service;
 
-import com.bigwharf.tingshu.model.payment.PaymentInfo;
+import com.atguigu.tingshu.model.payment.PaymentInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 public interface PaymentInfoService extends IService<PaymentInfo> {

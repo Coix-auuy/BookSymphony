@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.vo.system;
+package com.atguigu.tingshu.vo.system;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

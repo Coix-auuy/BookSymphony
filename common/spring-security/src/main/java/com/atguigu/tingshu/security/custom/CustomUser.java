@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.security.custom;
+package com.atguigu.tingshu.security.custom;
 
-import com.bigwharf.tingshu.model.system.SysUser;
+import com.atguigu.tingshu.model.system.SysUser;
 import org.springframework.security.core.userdetails.User;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.model.user;
+package com.atguigu.tingshu.model.user;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

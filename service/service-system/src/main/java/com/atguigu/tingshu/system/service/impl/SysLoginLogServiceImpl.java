@@ -1,9 +1,9 @@
-package com.bigwharf.tingshu.system.service.impl;
+package com.atguigu.tingshu.system.service.impl;
 
-import com.bigwharf.tingshu.model.system.SysLoginLog;
-import com.bigwharf.tingshu.system.mapper.SysLoginLogMapper;
-import com.bigwharf.tingshu.system.service.SysLoginLogService;
-import com.bigwharf.tingshu.vo.system.SysLoginLogQueryVo;
+import com.atguigu.tingshu.model.system.SysLoginLog;
+import com.atguigu.tingshu.system.mapper.SysLoginLogMapper;
+import com.atguigu.tingshu.system.service.SysLoginLogService;
+import com.atguigu.tingshu.vo.system.SysLoginLogQueryVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

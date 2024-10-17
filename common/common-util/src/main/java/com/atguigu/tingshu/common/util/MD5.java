@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.common.util;
+package com.atguigu.tingshu.common.util;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

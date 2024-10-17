@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.common.interceptor;
+package com.atguigu.tingshu.common.interceptor;
 
 import feign.RequestInterceptor;
 import feign.RequestTemplate;

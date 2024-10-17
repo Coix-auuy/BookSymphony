@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.vo.comment;
+package com.atguigu.tingshu.vo.comment;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotEmpty;

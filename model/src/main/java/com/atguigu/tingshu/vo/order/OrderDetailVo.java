@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.vo.order;
+package com.atguigu.tingshu.vo.order;
 
-import com.bigwharf.tingshu.common.util.Decimal2Serializer;
+import com.atguigu.tingshu.common.util.Decimal2Serializer;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.*;

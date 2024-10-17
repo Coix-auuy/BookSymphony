@@ -1,9 +1,9 @@
-package com.bigwharf.tingshu.system.service.impl;
+package com.atguigu.tingshu.system.service.impl;
 
-import com.bigwharf.tingshu.model.system.SysPost;
-import com.bigwharf.tingshu.system.mapper.SysPostMapper;
-import com.bigwharf.tingshu.system.service.SysPostService;
-import com.bigwharf.tingshu.vo.system.SysPostQueryVo;
+import com.atguigu.tingshu.model.system.SysPost;
+import com.atguigu.tingshu.system.mapper.SysPostMapper;
+import com.atguigu.tingshu.system.service.SysPostService;
+import com.atguigu.tingshu.vo.system.SysPostQueryVo;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;

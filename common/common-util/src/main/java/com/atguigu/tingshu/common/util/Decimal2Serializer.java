@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.common.util;
+package com.atguigu.tingshu.common.util;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonProcessingException;

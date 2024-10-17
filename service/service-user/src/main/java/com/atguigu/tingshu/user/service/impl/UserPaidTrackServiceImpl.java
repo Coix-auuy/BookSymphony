@@ -1,9 +1,9 @@
-package com.bigwharf.tingshu.user.service.impl;
+package com.atguigu.tingshu.user.service.impl;
 
-import com.bigwharf.tingshu.model.user.UserPaidTrack;
-import com.bigwharf.tingshu.user.mapper.UserPaidAlbumMapper;
-import com.bigwharf.tingshu.user.mapper.UserPaidTrackMapper;
-import com.bigwharf.tingshu.user.service.UserPaidTrackService;
+import com.atguigu.tingshu.model.user.UserPaidTrack;
+import com.atguigu.tingshu.user.mapper.UserPaidAlbumMapper;
+import com.atguigu.tingshu.user.mapper.UserPaidTrackMapper;
+import com.atguigu.tingshu.user.service.UserPaidTrackService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

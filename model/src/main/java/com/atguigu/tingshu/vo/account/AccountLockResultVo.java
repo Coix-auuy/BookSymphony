@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.vo.account;
+package com.atguigu.tingshu.vo.account;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

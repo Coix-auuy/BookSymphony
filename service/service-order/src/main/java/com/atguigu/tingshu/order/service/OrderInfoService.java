@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.order.service;
+package com.atguigu.tingshu.order.service;
 
-import com.bigwharf.tingshu.model.order.OrderInfo;
+import com.atguigu.tingshu.model.order.OrderInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 public interface OrderInfoService extends IService<OrderInfo> {

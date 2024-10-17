@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.order.client;
+package com.atguigu.tingshu.order.client;
 
-import com.bigwharf.tingshu.order.client.impl.OrderInfoDegradeFeignClient;
+import com.atguigu.tingshu.order.client.impl.OrderInfoDegradeFeignClient;
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**

@@ -1,7 +1,7 @@
-package com.bigwharf.tingshu.search.client.impl;
+package com.atguigu.tingshu.search.client.impl;
 
 
-import com.bigwharf.tingshu.search.client.SearchFeignClient;
+import com.atguigu.tingshu.search.client.SearchFeignClient;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,7 +1,7 @@
-package com.bigwharf.tingshu.order.client.impl;
+package com.atguigu.tingshu.order.client.impl;
 
 
-import com.bigwharf.tingshu.order.client.OrderInfoFeignClient;
+import com.atguigu.tingshu.order.client.OrderInfoFeignClient;
 import org.springframework.stereotype.Component;
 
 @Component

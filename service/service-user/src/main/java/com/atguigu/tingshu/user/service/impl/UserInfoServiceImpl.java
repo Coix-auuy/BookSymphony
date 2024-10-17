@@ -1,8 +1,8 @@
-package com.bigwharf.tingshu.user.service.impl;
+package com.atguigu.tingshu.user.service.impl;
 
-import com.bigwharf.tingshu.model.user.UserInfo;
-import com.bigwharf.tingshu.user.mapper.UserInfoMapper;
-import com.bigwharf.tingshu.user.service.UserInfoService;
+import com.atguigu.tingshu.model.user.UserInfo;
+import com.atguigu.tingshu.user.mapper.UserInfoMapper;
+import com.atguigu.tingshu.user.service.UserInfoService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

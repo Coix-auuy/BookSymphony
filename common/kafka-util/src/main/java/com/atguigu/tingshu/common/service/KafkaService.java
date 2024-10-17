@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.common.service;
+package com.atguigu.tingshu.common.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

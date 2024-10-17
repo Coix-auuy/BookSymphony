@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.common.result;
+package com.atguigu.tingshu.common.result;
 
 import lombok.Getter;
 

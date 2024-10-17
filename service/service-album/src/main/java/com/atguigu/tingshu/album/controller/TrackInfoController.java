@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.album.controller;
+package com.atguigu.tingshu.album.controller;
 
-import com.bigwharf.tingshu.album.service.TrackInfoService;
+import com.atguigu.tingshu.album.service.TrackInfoService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

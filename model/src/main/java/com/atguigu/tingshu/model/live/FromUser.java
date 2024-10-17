@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.model.live;
+package com.atguigu.tingshu.model.live;
 
 import lombok.Data;
 

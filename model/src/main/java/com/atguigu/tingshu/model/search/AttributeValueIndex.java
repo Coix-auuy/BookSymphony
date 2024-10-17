@@ -1,4 +1,4 @@
-package com.bigwharf.tingshu.model.search;
+package com.atguigu.tingshu.model.search;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

@@ -1,7 +1,7 @@
-package com.bigwharf.tingshu.payment.service.impl;
+package com.atguigu.tingshu.payment.service.impl;
 
-import com.bigwharf.tingshu.payment.service.PaymentInfoService;
-import com.bigwharf.tingshu.payment.service.WxPayService;
+import com.atguigu.tingshu.payment.service.PaymentInfoService;
+import com.atguigu.tingshu.payment.service.WxPayService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

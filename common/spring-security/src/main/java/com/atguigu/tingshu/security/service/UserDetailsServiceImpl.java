@@ -1,9 +1,9 @@
-package com.bigwharf.tingshu.security.service;
+package com.atguigu.tingshu.security.service;
 
-import com.bigwharf.tingshu.system.client.SecurityLoginFeignClient;
-import com.bigwharf.tingshu.common.result.Result;
-import com.bigwharf.tingshu.model.system.SysUser;
-import com.bigwharf.tingshu.security.custom.CustomUser;
+import com.atguigu.tingshu.system.client.SecurityLoginFeignClient;
+import com.atguigu.tingshu.common.result.Result;
+import com.atguigu.tingshu.model.system.SysUser;
+import com.atguigu.tingshu.security.custom.CustomUser;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

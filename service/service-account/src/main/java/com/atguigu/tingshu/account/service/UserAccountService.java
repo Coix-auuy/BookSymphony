@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.account.service;
+package com.atguigu.tingshu.account.service;
 
-import com.bigwharf.tingshu.model.account.UserAccount;
+import com.atguigu.tingshu.model.account.UserAccount;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 public interface UserAccountService extends IService<UserAccount> {

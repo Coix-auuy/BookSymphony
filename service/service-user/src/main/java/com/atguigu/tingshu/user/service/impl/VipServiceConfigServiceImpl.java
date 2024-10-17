@@ -1,8 +1,8 @@
-package com.bigwharf.tingshu.user.service.impl;
+package com.atguigu.tingshu.user.service.impl;
 
-import com.bigwharf.tingshu.model.user.VipServiceConfig;
-import com.bigwharf.tingshu.user.mapper.VipServiceConfigMapper;
-import com.bigwharf.tingshu.user.service.VipServiceConfigService;
+import com.atguigu.tingshu.model.user.VipServiceConfig;
+import com.atguigu.tingshu.user.mapper.VipServiceConfigMapper;
+import com.atguigu.tingshu.user.service.VipServiceConfigService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

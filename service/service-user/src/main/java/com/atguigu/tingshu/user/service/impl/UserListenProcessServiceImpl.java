@@ -1,6 +1,6 @@
-package com.bigwharf.tingshu.user.service.impl;
+package com.atguigu.tingshu.user.service.impl;
 
-import com.bigwharf.tingshu.user.service.UserListenProcessService;
+import com.atguigu.tingshu.user.service.UserListenProcessService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;

@@ -1,11 +1,11 @@
-package com.bigwharf.tingshu.system.service.impl;
+package com.atguigu.tingshu.system.service.impl;
 
-import com.bigwharf.tingshu.common.execption.GuiguException;
-import com.bigwharf.tingshu.common.result.ResultCodeEnum;
-import com.bigwharf.tingshu.model.system.SysDept;
-import com.bigwharf.tingshu.system.helper.DeptHelper;
-import com.bigwharf.tingshu.system.mapper.SysDeptMapper;
-import com.bigwharf.tingshu.system.service.SysDeptService;
+import com.atguigu.tingshu.common.execption.GuiguException;
+import com.atguigu.tingshu.common.result.ResultCodeEnum;
+import com.atguigu.tingshu.model.system.SysDept;
+import com.atguigu.tingshu.system.helper.DeptHelper;
+import com.atguigu.tingshu.system.mapper.SysDeptMapper;
+import com.atguigu.tingshu.system.service.SysDeptService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import jakarta.annotation.Resource;

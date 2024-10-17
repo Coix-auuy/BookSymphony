@@ -1,8 +1,8 @@
-package com.bigwharf.tingshu.system.client;
+package com.atguigu.tingshu.system.client;
 
-import com.bigwharf.tingshu.system.client.impl.SysOperLogDegradeFeignClient;
-import com.bigwharf.tingshu.common.result.Result;
-import com.bigwharf.tingshu.model.system.SysOperLog;
+import com.atguigu.tingshu.system.client.impl.SysOperLogDegradeFeignClient;
+import com.atguigu.tingshu.common.result.Result;
+import com.atguigu.tingshu.model.system.SysOperLog;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
