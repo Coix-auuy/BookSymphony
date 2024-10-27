@@ -1,6 +1,7 @@
 package com.atguigu.tingshu.album.api;
 
 import com.atguigu.tingshu.album.service.TrackInfoService;
+import com.atguigu.tingshu.common.login.TsLogin;
 import com.atguigu.tingshu.common.result.Result;
 import com.atguigu.tingshu.common.util.AuthContextHolder;
 import com.atguigu.tingshu.model.album.TrackInfo;
@@ -63,6 +64,7 @@ public class TrackInfoApiController {
      * @param trackInfoQuery
      * @return
      */
+    @TsLogin
     @Operation(summary = "查询声音列表")
     @PostMapping("/findUserTrackPage/{page}/{limit}")
     public Result findUserTrackPage(@PathVariable Long page, @PathVariable Long limit, @RequestBody TrackInfoQuery trackInfoQuery) {
@@ -91,6 +93,7 @@ public class TrackInfoApiController {
 
     /**
      * 根据声音 id 获取声音信息
+     *
      * @param trackId
      * @return
      */
@@ -104,6 +107,7 @@ public class TrackInfoApiController {
 
     /**
      * 更新声音信息
+     *
      * @param trackId
      * @param trackInfoVo
      * @return

@@ -5,8 +5,8 @@ package com.atguigu.tingshu.common.util;
  */
 public class AuthContextHolder {
 
-    private static ThreadLocal<Long> userId = new ThreadLocal<Long>();
-    private static ThreadLocal<String> username = new ThreadLocal<String>();
+    private static ThreadLocal<Long> userId = new ThreadLocal<>();
+    private static ThreadLocal<String> username = new ThreadLocal<>();
 
     public static void setUserId(Long _userId) {
         userId.set(_userId);

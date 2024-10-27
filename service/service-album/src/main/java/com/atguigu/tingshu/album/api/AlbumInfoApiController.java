@@ -2,6 +2,7 @@ package com.atguigu.tingshu.album.api;
 
 import com.atguigu.tingshu.album.service.AlbumInfoService;
 import com.atguigu.tingshu.album.service.BaseCategoryService;
+import com.atguigu.tingshu.common.login.TsLogin;
 import com.atguigu.tingshu.common.result.Result;
 import com.atguigu.tingshu.common.util.AuthContextHolder;
 import com.atguigu.tingshu.model.album.AlbumInfo;
@@ -49,11 +50,13 @@ public class AlbumInfoApiController {
 
     /**
      * 分页查询用户专辑列表
+     *
      * @param page
      * @param limit
      * @param albumInfoQuery
      * @return
      */
+    @TsLogin
     @PostMapping("/findUserAlbumPage/{page}/{limit}")
     public Result findUserAlbumPage(@PathVariable Long page, @PathVariable Long limit, @RequestBody AlbumInfoQuery albumInfoQuery) {
         // 隐藏条件: 用户 id
@@ -65,6 +68,12 @@ public class AlbumInfoApiController {
         return Result.ok(albumListVoIPage);
     }
 
+    /**
+     * 根据 albumId 删除专辑
+     *
+     * @param albumId
+     * @return
+     */
     @Operation(summary = "根据 albumId 删除专辑")
     @DeleteMapping("/removeAlbumInfo/{albumId}")
     public Result removeAlbumInfo(@PathVariable Long albumId) {
@@ -72,12 +81,26 @@ public class AlbumInfoApiController {
         return Result.ok();
     }
 
+    /**
+     * 根据 albumId 回显专辑数据
+     *
+     * @param albumId
+     * @return
+     */
     @Operation(summary = "根据 albumId 回显专辑数据")
     @GetMapping("/getAlbumInfo/{albumId}")
     public Result getAlbumInfo(@PathVariable Long albumId) {
         AlbumInfo albumInfo = albumInfoService.getAlbumInfoById(albumId);
         return Result.ok(albumInfo);
     }
+
+    /**
+     * 更新专辑信息
+     *
+     * @param albumId
+     * @param albumInfoVo
+     * @return
+     */
     @Operation(summary = "更新专辑信息")
     @PutMapping("/updateAlbumInfo/{albumId}")
     public Result updateAlbumInfo(@PathVariable Long albumId, @RequestBody AlbumInfoVo albumInfoVo) {
@@ -87,13 +110,15 @@ public class AlbumInfoApiController {
 
     /**
      * 获取专辑列表
+     *
      * @return
      */
+
     @Operation(summary = "获取专辑列表")
     @GetMapping("/findUserAllAlbumList")
     public Result findUserAllAlbumList() {
         Long userId = AuthContextHolder.getUserId() == null ? 1l : AuthContextHolder.getUserId();
-        List<AlbumInfo> albumInfoList =  albumInfoService.findUserAllAlbumList(userId);
+        List<AlbumInfo> albumInfoList = albumInfoService.findUserAllAlbumList(userId);
         return Result.ok(albumInfoList);
     }
 

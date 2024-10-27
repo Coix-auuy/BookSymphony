@@ -133,11 +133,11 @@ public class TrackInfoServiceImpl extends ServiceImpl<TrackInfoMapper, TrackInfo
     @Override
     public TrackInfo getTrackInfoById(Long trackId) {
         TrackInfo trackInfo = trackInfoMapper.selectById(trackId);
-
         return trackInfo;
     }
 
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public void updateTrackInfo(Long trackId, TrackInfoVo trackInfoVo) {
         // 在数据库中先查询到未做修改的声音信息
         TrackInfo trackInfo = this.getById(trackId);
