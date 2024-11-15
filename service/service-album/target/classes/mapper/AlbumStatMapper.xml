@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.atguigu.tingshu.album.mapper.AlbumStatMapper">
+
+
+    <select id="getAlbumStatVo" resultType="com.atguigu.tingshu.vo.album.AlbumStatVo">
+        select stat.album_id,
+               max(case when stat.stat_type = '0401' then stat.stat_num else 0 end) playStatNum,
+               max(case when stat.stat_type = '0402' then stat.stat_num else 0 end) subscribeStatNum,
+               max(case when stat.stat_type = '0403' then stat.stat_num else 0 end) buyStatNum,
+               max(case when stat.stat_type = '0404' then stat.stat_num else 0 end) commentStatNum
+        from album_stat stat
+        where stat.album_id = #{albumId}
+        group by stat.album_id
+    </select>
+</mapper>

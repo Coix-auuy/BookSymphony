@@ -36,6 +36,7 @@
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-streams</artifactId>
         </dependency>
+
     </dependencies>
 
     <build>

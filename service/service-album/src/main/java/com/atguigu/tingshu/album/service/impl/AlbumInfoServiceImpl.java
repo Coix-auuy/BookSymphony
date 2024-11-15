@@ -5,7 +5,9 @@ import com.atguigu.tingshu.album.mapper.AlbumInfoMapper;
 import com.atguigu.tingshu.album.mapper.AlbumStatMapper;
 import com.atguigu.tingshu.album.service.AlbumAttributeValueService;
 import com.atguigu.tingshu.album.service.AlbumInfoService;
+import com.atguigu.tingshu.common.constant.KafkaConstant;
 import com.atguigu.tingshu.common.constant.SystemConstant;
+import com.atguigu.tingshu.common.service.KafkaService;
 import com.atguigu.tingshu.model.album.AlbumAttributeValue;
 import com.atguigu.tingshu.model.album.AlbumInfo;
 import com.atguigu.tingshu.model.album.AlbumStat;
@@ -13,6 +15,7 @@ import com.atguigu.tingshu.query.album.AlbumInfoQuery;
 import com.atguigu.tingshu.vo.album.AlbumAttributeValueVo;
 import com.atguigu.tingshu.vo.album.AlbumInfoVo;
 import com.atguigu.tingshu.vo.album.AlbumListVo;
+import com.atguigu.tingshu.vo.album.AlbumStatVo;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -45,6 +48,17 @@ public class AlbumInfoServiceImpl extends ServiceImpl<AlbumInfoMapper, AlbumInfo
 
     @Autowired
     private AlbumAttributeValueService albumAttributeValueService;
+
+    @Autowired
+    private KafkaService kafkaService;
+
+    @Override
+    public List<AlbumAttributeValue> findAlbumAttributeValue(Long albumId) {
+        LambdaQueryWrapper<AlbumAttributeValue> lambdaQueryWrapper = new LambdaQueryWrapper<>();
+        lambdaQueryWrapper.eq(AlbumAttributeValue::getAlbumId, albumId);
+        List<AlbumAttributeValue> albumAttributeValueList = albumAttributeValueMapper.selectList(lambdaQueryWrapper);
+        return albumAttributeValueList;
+    }
 
     @Override
     @Transactional(rollbackFor = Exception.class)
@@ -87,6 +101,12 @@ public class AlbumInfoServiceImpl extends ServiceImpl<AlbumInfoMapper, AlbumInfo
         this.saveAlbumStat(albumInfo.getId(), SystemConstant.ALBUM_STAT_SUBSCRIBE);
         this.saveAlbumStat(albumInfo.getId(), SystemConstant.ALBUM_STAT_BROWSE);
         this.saveAlbumStat(albumInfo.getId(), SystemConstant.ALBUM_STAT_COMMENT);
+
+        // 判断是否上架
+        if ("1".equals(albumInfoVo.getIsOpen())) {
+            // 上架
+            kafkaService.sendMsg(KafkaConstant.QUEUE_ALBUM_UPPER, albumInfo.getId().toString());
+        }
     }
 
     @Override
@@ -132,7 +152,14 @@ public class AlbumInfoServiceImpl extends ServiceImpl<AlbumInfoMapper, AlbumInfo
             }).collect(Collectors.toList());
             albumAttributeValueService.saveBatch(albumAttributeValueList);
         }
-
+        // 判断是否上架
+        if ("1".equals(albumInfoVo.getIsOpen())) {
+            // 上架
+            kafkaService.sendMsg(KafkaConstant.QUEUE_ALBUM_UPPER, albumId.toString());
+        } else {
+            // 下架
+            kafkaService.sendMsg(KafkaConstant.QUEUE_ALBUM_LOWER, albumId.toString());
+        }
     }
 
     @Override
@@ -144,9 +171,16 @@ public class AlbumInfoServiceImpl extends ServiceImpl<AlbumInfoMapper, AlbumInfo
         return selectPage.getRecords();
     }
 
+
     @Override
     public IPage<AlbumListVo> getUserAlbumPage(Page<AlbumListVo> albumListVoPage, AlbumInfoQuery albumInfoQuery) {
         return albumInfoMapper.selectUserAlbumPage(albumListVoPage, albumInfoQuery);
+    }
+
+    @Override
+    public AlbumStatVo getAlbumStatVo(Long albumId) {
+        AlbumStatVo albumStatVo = albumStatMapper.getAlbumStatVo(albumId);
+        return albumStatVo;
     }
 
     private void saveAlbumStat(Long id, String statType) {
@@ -156,4 +190,6 @@ public class AlbumInfoServiceImpl extends ServiceImpl<AlbumInfoMapper, AlbumInfo
         albumStat.setStatNum(0);
         albumStatMapper.insert(albumStat);
     }
+
+
 }

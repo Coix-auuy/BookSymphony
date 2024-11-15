@@ -3,8 +3,6 @@ package com.atguigu.tingshu.user.service.impl;
 import cn.binarywang.wx.miniapp.api.WxMaService;
 import com.atguigu.tingshu.common.constant.KafkaConstant;
 import com.atguigu.tingshu.common.constant.RedisConstant;
-import com.atguigu.tingshu.common.execption.GuiguException;
-import com.atguigu.tingshu.common.result.ResultCodeEnum;
 import com.atguigu.tingshu.common.service.KafkaService;
 import com.atguigu.tingshu.model.account.UserAccount;
 import com.atguigu.tingshu.model.user.UserInfo;
@@ -96,10 +94,13 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> i
         return userInfoVo;
     }
 
+
+
     @Override
     public void updateUser(UserInfoVo userInfoVo) {
         UserInfo userInfo = new UserInfo();
         BeanUtils.copyProperties(userInfoVo, userInfo);
         this.updateById(userInfo);
     }
+
 }

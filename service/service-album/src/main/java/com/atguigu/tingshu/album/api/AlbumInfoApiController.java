@@ -5,10 +5,12 @@ import com.atguigu.tingshu.album.service.BaseCategoryService;
 import com.atguigu.tingshu.common.login.TsLogin;
 import com.atguigu.tingshu.common.result.Result;
 import com.atguigu.tingshu.common.util.AuthContextHolder;
+import com.atguigu.tingshu.model.album.AlbumAttributeValue;
 import com.atguigu.tingshu.model.album.AlbumInfo;
 import com.atguigu.tingshu.query.album.AlbumInfoQuery;
 import com.atguigu.tingshu.vo.album.AlbumInfoVo;
 import com.atguigu.tingshu.vo.album.AlbumListVo;
+import com.atguigu.tingshu.vo.album.AlbumStatVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.v3.oas.annotations.Operation;
@@ -60,7 +62,9 @@ public class AlbumInfoApiController {
     @PostMapping("/findUserAlbumPage/{page}/{limit}")
     public Result findUserAlbumPage(@PathVariable Long page, @PathVariable Long limit, @RequestBody AlbumInfoQuery albumInfoQuery) {
         // 隐藏条件: 用户 id
-        Long userId = AuthContextHolder.getUserId() == null ? 1l : AuthContextHolder.getUserId();
+        // Long userId = AuthContextHolder.getUserId() == null ? 1l : AuthContextHolder.getUserId();
+
+        Long userId = 1l; // 测试暂时调整
         albumInfoQuery.setUserId(userId);
         // 利用 mybatis-plus 分页查询
         Page<AlbumListVo> albumListVoPage = new Page<>(page, limit);
@@ -121,6 +125,27 @@ public class AlbumInfoApiController {
         List<AlbumInfo> albumInfoList = albumInfoService.findUserAllAlbumList(userId);
         return Result.ok(albumInfoList);
     }
+
+    /**
+     * 根据专辑 id 获取属性信息
+     *
+     * @param albumId
+     * @return
+     */
+    @Operation(summary = "获取专辑属性列表")
+    @GetMapping("/findAlbumAttributeValue/{albumId}")
+    public Result<List<AlbumAttributeValue>> findAlbumAttributeValue(@PathVariable("albumId") Long albumId) {
+        List<AlbumAttributeValue> albumAttributeValueList = albumInfoService.findAlbumAttributeValue(albumId);
+        return Result.ok(albumAttributeValueList);
+    }
+
+    @GetMapping("/getAlbumStatVo/{albumId}")
+    Result<AlbumStatVo> getAlbumStatVo(@PathVariable("albumId") Long albumId) {
+        AlbumStatVo albumStatVo = albumInfoService.getAlbumStatVo(albumId);
+        return Result.ok(albumStatVo);
+    }
+
+    ;
 
 }
 

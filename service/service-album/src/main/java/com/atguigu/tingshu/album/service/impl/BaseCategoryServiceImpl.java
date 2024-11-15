@@ -3,9 +3,9 @@ package com.atguigu.tingshu.album.service.impl;
 import com.alibaba.fastjson.JSONObject;
 import com.atguigu.tingshu.album.mapper.*;
 import com.atguigu.tingshu.album.service.BaseCategoryService;
-import com.atguigu.tingshu.model.album.BaseAttribute;
-import com.atguigu.tingshu.model.album.BaseCategory1;
-import com.atguigu.tingshu.model.album.BaseCategoryView;
+import com.atguigu.tingshu.common.result.Result;
+import com.atguigu.tingshu.model.album.*;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import kotlin.collections.ArrayDeque;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -90,5 +91,63 @@ public class BaseCategoryServiceImpl extends ServiceImpl<BaseCategory1Mapper, Ba
     public List<BaseAttribute> findAttribute(Long category1Id) {
         // 根据一级分类 id 获取属性标签数据
         return baseAttributeMapper.selectAttribute(category1Id);
+    }
+
+
+    @Override
+    public BaseCategoryView getCategoryView(Long category3Id) {
+        // 通过类别ID查询并返回类别视图
+        return baseCategoryViewMapper.selectById(category3Id);
+    }
+
+    /**
+     * 根据一级分类 Id 获取分类数据
+     *
+     * @param category1Id
+     * @return
+     */
+    @Override
+    public JSONObject getBaseCategoryList(Long category1Id) {
+        JSONObject category1 = new JSONObject();
+        // 根据一级分类 id 查找一级分类名
+        LambdaQueryWrapper<BaseCategoryView> baseCategoryViewQueryWrapper = new LambdaQueryWrapper<>();
+        baseCategoryViewQueryWrapper.eq(BaseCategoryView::getCategory1Id, category1Id);
+        List<BaseCategoryView> baseCategoryViews = baseCategoryViewMapper.selectList(baseCategoryViewQueryWrapper);
+        // 封装一级分类数据
+        category1.put("categoryId", category1Id);
+        category1.put("categoryName", baseCategoryViews.get(0).getCategory1Name());
+        // 封装二级分类数据
+        Map<Long, List<BaseCategoryView>> map2 = baseCategoryViews.stream().collect(Collectors.groupingBy(BaseCategoryView::getCategory2Id));
+        Iterator<Map.Entry<Long, List<BaseCategoryView>>> iterator = map2.entrySet().iterator();
+        ArrayList<JSONObject> category2Child = new ArrayList<>();
+        while (iterator.hasNext()) {
+            JSONObject category2 = new JSONObject();
+            Map.Entry<Long, List<BaseCategoryView>> next = iterator.next();
+            category2.put("categoryId", next.getKey());
+            category2.put("categoryName", next.getValue().get(0).getCategory2Name());
+            // 封装三级分类数据
+            List<JSONObject> category3Child = next.getValue().stream().map(baseCategoryView -> {
+                JSONObject category3 = new JSONObject();
+                category3.put("categoryId", baseCategoryView.getCategory3Id());
+                category3.put("categoryName", baseCategoryView.getCategory3Name());
+                return category3;
+            }).collect(Collectors.toList());
+            category2.put("categoryChild", category3Child);
+            category2Child.add(category2);
+        }
+        category1.put("categoryChild", category2Child);
+        return category1;
+    }
+
+    @Override
+    public List<BaseCategory3> findTopBaseCategory3(Long category1Id) {
+        // 获取一级分类下的二级分类
+        List<BaseCategory2> baseCategory2List = baseCategory2Mapper.selectList(new LambdaQueryWrapper<BaseCategory2>().eq(BaseCategory2::getCategory1Id, category1Id));
+        // 获取二级分类 id
+        List<Long> category2IdList = baseCategory2List.stream().map(BaseCategory2::getId).collect(Collectors.toList());
+        // 获取二级分类下的所有置顶的三级分类数据
+        LambdaQueryWrapper<BaseCategory3> baseCategory3QueryWrapper = new LambdaQueryWrapper<>();
+        baseCategory3QueryWrapper.in(BaseCategory3::getCategory2Id, category2IdList).eq(BaseCategory3::getIsTop, 1).last("limit 7");
+        return baseCategory3Mapper.selectList(baseCategory3QueryWrapper);
     }
 }

@@ -28,4 +28,6 @@ public interface UserInfoService extends IService<UserInfo> {
      * @param userInfoVo
      */
     void updateUser(UserInfoVo userInfoVo);
+
+
 }
