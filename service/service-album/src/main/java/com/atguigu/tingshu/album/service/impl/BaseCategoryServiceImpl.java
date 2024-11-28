@@ -150,4 +150,11 @@ public class BaseCategoryServiceImpl extends ServiceImpl<BaseCategory1Mapper, Ba
         baseCategory3QueryWrapper.in(BaseCategory3::getCategory2Id, category2IdList).eq(BaseCategory3::getIsTop, 1).last("limit 7");
         return baseCategory3Mapper.selectList(baseCategory3QueryWrapper);
     }
+
+    @Override
+    public List<BaseCategory1> findAllCategory1() {
+
+        return baseCategory1Mapper.selectList(null);
+
+    }
 }

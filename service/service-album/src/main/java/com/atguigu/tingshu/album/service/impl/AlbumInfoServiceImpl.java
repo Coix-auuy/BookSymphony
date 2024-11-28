@@ -3,6 +3,7 @@ package com.atguigu.tingshu.album.service.impl;
 import com.atguigu.tingshu.album.mapper.AlbumAttributeValueMapper;
 import com.atguigu.tingshu.album.mapper.AlbumInfoMapper;
 import com.atguigu.tingshu.album.mapper.AlbumStatMapper;
+import com.atguigu.tingshu.album.mapper.TrackInfoMapper;
 import com.atguigu.tingshu.album.service.AlbumAttributeValueService;
 import com.atguigu.tingshu.album.service.AlbumInfoService;
 import com.atguigu.tingshu.common.constant.KafkaConstant;
@@ -12,10 +13,7 @@ import com.atguigu.tingshu.model.album.AlbumAttributeValue;
 import com.atguigu.tingshu.model.album.AlbumInfo;
 import com.atguigu.tingshu.model.album.AlbumStat;
 import com.atguigu.tingshu.query.album.AlbumInfoQuery;
-import com.atguigu.tingshu.vo.album.AlbumAttributeValueVo;
-import com.atguigu.tingshu.vo.album.AlbumInfoVo;
-import com.atguigu.tingshu.vo.album.AlbumListVo;
-import com.atguigu.tingshu.vo.album.AlbumStatVo;
+import com.atguigu.tingshu.vo.album.*;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -48,6 +46,9 @@ public class AlbumInfoServiceImpl extends ServiceImpl<AlbumInfoMapper, AlbumInfo
 
     @Autowired
     private AlbumAttributeValueService albumAttributeValueService;
+
+    @Autowired
+    private TrackInfoMapper trackInfoMapper;
 
     @Autowired
     private KafkaService kafkaService;
@@ -181,6 +182,18 @@ public class AlbumInfoServiceImpl extends ServiceImpl<AlbumInfoMapper, AlbumInfo
     public AlbumStatVo getAlbumStatVo(Long albumId) {
         AlbumStatVo albumStatVo = albumStatMapper.getAlbumStatVo(albumId);
         return albumStatVo;
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public void trackStatUpdate(TrackStatMqVo trackStatMqVo) throws Exception {
+        // 更新声音
+        trackInfoMapper.trackStatUpdate(trackStatMqVo.getTrackId(), trackStatMqVo.getStatType(), trackStatMqVo.getCount());
+        // 更新专辑
+        if (SystemConstant.TRACK_STAT_PLAY.equals(trackStatMqVo.getStatType())) {
+            albumInfoMapper.albumStatUpdate(trackStatMqVo.getAlbumId(), SystemConstant.ALBUM_STAT_PLAY, trackStatMqVo.getCount());
+        }
+
     }
 
     private void saveAlbumStat(Long id, String statType) {

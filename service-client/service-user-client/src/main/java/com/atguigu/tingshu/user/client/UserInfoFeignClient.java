@@ -7,6 +7,11 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -19,9 +24,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface UserInfoFeignClient {
     /**
      * 根据userId 获取到用户信息
+     *
      * @param userId
      * @return
      */
     @GetMapping("api/user/userInfo/getUserInfoVo/{userId}")
     Result<UserInfoVo> getUserInfoVo(@PathVariable Long userId);
+
+    @PostMapping("api/user/userInfo/userIsPaidTrack/{albumId}")
+    Result<Map<Long, Integer>> userIsPaidTrack(@PathVariable Long albumId, @RequestBody List<Long> tarckIdList);
 }

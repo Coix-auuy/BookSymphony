@@ -1,12 +1,17 @@
 package com.atguigu.tingshu.user.service.impl;
 
 import cn.binarywang.wx.miniapp.api.WxMaService;
+import com.alibaba.nacos.common.utils.CollectionUtils;
 import com.atguigu.tingshu.common.constant.KafkaConstant;
 import com.atguigu.tingshu.common.constant.RedisConstant;
 import com.atguigu.tingshu.common.service.KafkaService;
 import com.atguigu.tingshu.model.account.UserAccount;
 import com.atguigu.tingshu.model.user.UserInfo;
+import com.atguigu.tingshu.model.user.UserPaidAlbum;
+import com.atguigu.tingshu.model.user.UserPaidTrack;
 import com.atguigu.tingshu.user.mapper.UserInfoMapper;
+import com.atguigu.tingshu.user.mapper.UserPaidAlbumMapper;
+import com.atguigu.tingshu.user.mapper.UserPaidTrackMapper;
 import com.atguigu.tingshu.user.service.UserInfoService;
 import com.atguigu.tingshu.vo.user.UserInfoVo;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
@@ -20,9 +25,11 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -38,6 +45,10 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> i
     private RedisTemplate redisTemplate;
     @Autowired
     private KafkaService kafkaService;
+    @Autowired
+    private UserPaidAlbumMapper userPaidAlbumMapper;
+    @Autowired
+    private UserPaidTrackMapper userPaidTrackMapper;
 
     /**
      * 微信小程序登录
@@ -95,6 +106,29 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> i
     }
 
 
+    @Override
+    public Map<Long, Integer> userIsPaidTrack(Long albumId, List<Long> tarckIdList, Long userId) {
+        // 查看用户是否购买过专辑
+        UserPaidAlbum userPaidAlbum = userPaidAlbumMapper.selectOne(new LambdaQueryWrapper<UserPaidAlbum>().eq(UserPaidAlbum::getAlbumId, albumId).eq(UserPaidAlbum::getUserId, userId));
+        Map<Long, Integer> map;
+        if (null != userPaidAlbum) {
+            map = tarckIdList.stream().collect(Collectors.toMap(trackId -> trackId, trackId -> 1));
+        } else {
+            // 判断用户是否购买过当前专辑下的声音
+            LambdaQueryWrapper<UserPaidTrack> userPaidTrackQueryWrapper = new LambdaQueryWrapper<>();
+            userPaidTrackQueryWrapper.eq(UserPaidTrack::getUserId, userId).eq(UserPaidTrack::getAlbumId, albumId).in(UserPaidTrack::getTrackId, tarckIdList);
+            List<UserPaidTrack> userPaidTrackList = userPaidTrackMapper.selectList(userPaidTrackQueryWrapper);
+            map = tarckIdList.stream().collect(Collectors.toMap(trackId -> trackId, trackId -> 0));
+            if (CollectionUtils.isNotEmpty(userPaidTrackList)) {
+                for (UserPaidTrack userPaidTrack : userPaidTrackList) {
+                    if (map.containsKey(userPaidTrack.getTrackId())) {
+                        map.put(userPaidTrack.getTrackId(), 1);
+                    }
+                }
+            }
+        }
+        return map;
+    }
 
     @Override
     public void updateUser(UserInfoVo userInfoVo) {

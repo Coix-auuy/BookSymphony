@@ -6,6 +6,7 @@ import com.atguigu.tingshu.common.result.Result;
 import com.atguigu.tingshu.common.util.AuthContextHolder;
 import com.atguigu.tingshu.model.album.TrackInfo;
 import com.atguigu.tingshu.query.album.TrackInfoQuery;
+import com.atguigu.tingshu.vo.album.AlbumTrackListVo;
 import com.atguigu.tingshu.vo.album.TrackInfoVo;
 import com.atguigu.tingshu.vo.album.TrackListVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -118,6 +119,17 @@ public class TrackInfoApiController {
         // 调用服务层方法
         trackInfoService.updateTrackInfo(trackId, trackInfoVo);
         return Result.ok();
+    }
+
+    @TsLogin(required = false) // 如果请求携带 token 会获取保存用户 id
+    @Operation(summary = "根据专辑 Id 获取声音列表")
+    @GetMapping("findAlbumTrackPage/{albumId}/{page}/{limit}")
+    public Result findAlbumTrackPage(@PathVariable Long albumId, @PathVariable Long page, @PathVariable Long limit) {
+        Long userId = AuthContextHolder.getUserId();
+        // 创建 page 对象
+        Page<AlbumTrackListVo> albumTrackListVoPage = new Page<>(page, limit);
+        IPage<AlbumTrackListVo> albumTrackListVoIPage = trackInfoService.findAlbumTrackPage(albumTrackListVoPage, albumId, userId);
+        return Result.ok(albumTrackListVoIPage);
     }
 }
 

@@ -8,17 +8,16 @@ import co.elastic.clients.elasticsearch._types.query_dsl.MatchQuery;
 import co.elastic.clients.elasticsearch._types.query_dsl.Query;
 import co.elastic.clients.elasticsearch.core.SearchRequest;
 import co.elastic.clients.elasticsearch.core.SearchResponse;
+import co.elastic.clients.elasticsearch.core.search.Hit;
 import co.elastic.clients.elasticsearch.core.search.Suggestion;
 import co.elastic.clients.json.JsonData;
 import com.alibaba.fastjson.JSON;
 import com.atguigu.tingshu.album.client.AlbumInfoFeignClient;
 import com.atguigu.tingshu.album.client.CategoryFeignClient;
+import com.atguigu.tingshu.common.constant.RedisConstant;
 import com.atguigu.tingshu.common.result.Result;
 import com.atguigu.tingshu.common.util.PinYinUtils;
-import com.atguigu.tingshu.model.album.AlbumAttributeValue;
-import com.atguigu.tingshu.model.album.AlbumInfo;
-import com.atguigu.tingshu.model.album.BaseCategory3;
-import com.atguigu.tingshu.model.album.BaseCategoryView;
+import com.atguigu.tingshu.model.album.*;
 import com.atguigu.tingshu.model.base.BaseEntity;
 import com.atguigu.tingshu.model.search.AlbumInfoIndex;
 import com.atguigu.tingshu.model.search.AttributeValueIndex;
@@ -37,6 +36,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.suggest.Completion;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
@@ -73,6 +73,9 @@ public class SearchServiceImpl implements SearchService {
 
     @Autowired
     private SuggestIndexRepository suggestIndexRepository;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     @Override
     public void upperAlbum(Long albumId) {
@@ -265,6 +268,38 @@ public class SearchServiceImpl implements SearchService {
         keywordList.addAll(getSuggestResult(searchResponse, "suggestionkeywordPinyin"));
         keywordList.addAll(getSuggestResult(searchResponse, "suggestionkeywordSequence"));
         return keywordList;
+    }
+
+    @Override
+    public void updateLatelyAlbumRanking() {
+        // 先获取所有一级分类 Id 数据
+        Result<List<BaseCategory1>> baseCategory1Result = categoryFeignClient.findAllCategory1();
+        Assert.notNull(baseCategory1Result, "一级分类结果集为空");
+        List<BaseCategory1> category1List = baseCategory1Result.getData();
+        Assert.notNull(category1List, "一级分类集合为空");
+
+        // 存储到缓存: hset key(category1Id) field(statType) value （集合数据）; set key(category1Id:statType) value(JSON);
+        for (BaseCategory1 baseCategory1 : category1List) {
+            Long category1Id = baseCategory1.getId();
+            String[] rankingDimensionArray = new String[]{"hotScore", "playStatNum", "subscribeStatNum", "buyStatNum", "commentStatNum"};
+            for (String rankingDimension : rankingDimensionArray) {
+                // 获取 ES 中的排序数据
+                SearchResponse<AlbumInfoIndex> searchResponse = null;
+                try {
+                    searchResponse = elasticsearchClient.search(s -> s.index("albuminfo").query(q -> q.term(t -> t.field("category1Id").value(category1Id))).sort(st -> st.field(f -> f.field(rankingDimension).order(SortOrder.Desc))).size(10), AlbumInfoIndex.class);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+                List<AlbumInfoIndex> albumInfoIndexList = searchResponse.hits().hits().stream().map(Hit::source).collect(Collectors.toList());
+                String rankKey = RedisConstant.RANKING_KEY_PREFIX + category1Id;
+                redisTemplate.opsForHash().put(rankKey, rankingDimension, albumInfoIndexList);
+            }
+        }
+    }
+
+    @Override
+    public List<AlbumInfoIndex> findRankingList(Long category1Id, String dimension) {
+        return (List<AlbumInfoIndex>) redisTemplate.opsForHash().get(RedisConstant.RANKING_KEY_PREFIX + category1Id, dimension);
     }
 
     private List<String> getSuggestResult(SearchResponse<SuggestIndex> searchResponse, String suggestionKeywordType) {

@@ -1,5 +1,6 @@
 package com.atguigu.tingshu.search.service;
 
+import com.atguigu.tingshu.model.search.AlbumInfoIndex;
 import com.atguigu.tingshu.query.search.AlbumIndexQuery;
 import com.atguigu.tingshu.vo.search.AlbumSearchResponseVo;
 
@@ -30,4 +31,18 @@ public interface SearchService {
      * @return
      */
     List<String> completeSuggest(String keyword);
+
+    /**
+     * 存储排行榜数据到缓存
+     */
+    void updateLatelyAlbumRanking();
+
+    /**
+     * 查看排行榜
+     *
+     * @param category1Id
+     * @param dimension
+     * @return
+     */
+    List<AlbumInfoIndex> findRankingList(Long category1Id, String dimension);
 }

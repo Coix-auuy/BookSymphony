@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper
-PUBLIC "-//mybatis.apache.org//DTD Mapper 3.0//EN"
-"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        PUBLIC "-//mybatis.apache.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 
 <mapper namespace="com.atguigu.tingshu.album.mapper.TrackInfoMapper">
@@ -35,6 +35,21 @@ PUBLIC "-//mybatis.apache.org//DTD Mapper 3.0//EN"
         </where>
         group by ts.track_id
         order by ti.id desc
+    </select>
+    <resultMap id="AlbumTrackListVoMap" type="com.atguigu.tingshu.vo.album.AlbumTrackListVo" autoMapping="true">
+    </resultMap>
+    <select id="selectAlbumTrackPage" resultMap="AlbumTrackListVoMap">
+        select ti.id             as                                             trackId,
+               ti.track_title    as                                             trackTitle,
+               ti.media_duration as                                             mediaDuration,
+               ti.order_num      as                                             orderNum,
+               ti.create_time    as                                             createTime,
+               max(case when ts.stat_type = '0701' then ts.stat_num else 0 end) playStatNum,
+               max(case when ts.stat_type = '0704' then ts.stat_num else 0 end) commentStatNum
+        from track_info ti
+                 inner join track_stat ts on ti.id = ts.track_id
+        where ti.album_id = #{albumId}
+        group by ti.id
     </select>
 </mapper>
 

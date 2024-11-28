@@ -2,6 +2,7 @@ package com.atguigu.tingshu.album.mapper;
 
 import com.atguigu.tingshu.model.album.TrackInfo;
 import com.atguigu.tingshu.query.album.TrackInfoQuery;
+import com.atguigu.tingshu.vo.album.AlbumTrackListVo;
 import com.atguigu.tingshu.vo.album.TrackListVo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -31,4 +32,15 @@ public interface TrackInfoMapper extends BaseMapper<TrackInfo> {
      */
     @Update("update track_info set order_num = order_num - 1 where album_id = #{albumId} and order_num > #{orderNum} and is_deleted = 0")
     void updateOrderNum(@Param("orderNum") Integer orderNum, @Param("albumId") Long albumId);
+
+    IPage<AlbumTrackListVo> selectAlbumTrackPage(Page<AlbumTrackListVo> albumTrackListVoPage, @Param("albumId") Long albumId);
+
+    /**
+     * 更新声音统计数据
+     * @param trackId
+     * @param statType
+     * @param count
+     */
+    @Update("update track_stat set stat_num = stat_num + #{count} where track_id = #{trackId} and stat_type = #{statType}")
+    void trackStatUpdate(@Param("trackId") Long trackId, @Param("statType") String statType, @Param("count") Integer count);
 }

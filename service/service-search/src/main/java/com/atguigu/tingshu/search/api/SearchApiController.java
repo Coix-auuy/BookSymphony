@@ -1,8 +1,11 @@
 package com.atguigu.tingshu.search.api;
 
 import com.atguigu.tingshu.common.result.Result;
+import com.atguigu.tingshu.model.search.AlbumInfoIndex;
 import com.atguigu.tingshu.query.search.AlbumIndexQuery;
+import com.atguigu.tingshu.search.service.ItemService;
 import com.atguigu.tingshu.search.service.SearchService;
+import com.atguigu.tingshu.vo.search.AlbumInfoIndexVo;
 import com.atguigu.tingshu.vo.search.AlbumSearchResponseVo;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -21,6 +24,9 @@ public class SearchApiController {
 
     @Autowired
     private SearchService searchService;
+
+    @Autowired
+    private ItemService itemService;
 
     @Operation(summary = "专辑上架")
     @GetMapping("/upperAlbum/{albumId}")
@@ -74,6 +80,28 @@ public class SearchApiController {
         //  返回数据
         return Result.ok(list);
     }
+
+    @Operation(summary = "根据专辑 Id 回显专辑数据")
+    @GetMapping("/{albumId}")
+    public Result getItem(@PathVariable Long albumId) {
+        Map<String, Object> result = itemService.getItem(albumId);
+        return Result.ok(result);
+    }
+
+    @Operation(summary = "手动调用排行榜")
+    @GetMapping("/updateLatelyAlbumRanking")
+    public Result updateLatelyAlbumRanking() {
+        searchService.updateLatelyAlbumRanking();
+        return Result.ok();
+    }
+
+    @Operation(summary = "查看排行榜")
+    @GetMapping("/findRankingList/{category1Id}/{dimension}")
+    public Result<List<AlbumInfoIndex>> findRankingList(@PathVariable Long category1Id, @PathVariable String dimension) {
+        List<AlbumInfoIndex> result = searchService.findRankingList(category1Id, dimension);
+        return Result.ok(result);
+    }
+
 
 }
 

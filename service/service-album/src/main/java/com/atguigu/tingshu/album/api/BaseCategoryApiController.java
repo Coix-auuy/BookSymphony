@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.atguigu.tingshu.album.service.BaseCategoryService;
 import com.atguigu.tingshu.common.result.Result;
 import com.atguigu.tingshu.model.album.BaseAttribute;
+import com.atguigu.tingshu.model.album.BaseCategory1;
 import com.atguigu.tingshu.model.album.BaseCategory3;
 import com.atguigu.tingshu.model.album.BaseCategoryView;
 import io.swagger.v3.oas.annotations.Operation;
@@ -57,16 +58,25 @@ public class BaseCategoryApiController {
     public Result<BaseCategoryView> getCategoryView(@PathVariable Long category3Id) {
         return Result.ok(baseCategoryService.getCategoryView(category3Id));
     }
+
     @Operation(summary = "根据一级分类 Id 获取分类数据")
     @GetMapping("/getBaseCategoryList/{category1Id}")
     public Result getBaseCategoryList(@PathVariable Long category1Id) {
         JSONObject jsonObject = baseCategoryService.getBaseCategoryList(category1Id);
         return Result.ok(jsonObject);
     }
+
     @Operation(summary = "根据一级分类 Id 查询置顶到频道页的三级分类列表")
     @GetMapping("/findTopBaseCategory3/{category1Id}")
     Result<List<BaseCategory3>> findTopBaseCategory3(@PathVariable Long category1Id) {
         List<BaseCategory3> result = baseCategoryService.findTopBaseCategory3(category1Id);
+        return Result.ok(result);
+    }
+
+    @Operation(summary = "获取全部一级分类")
+    @GetMapping("/findAllCategory1")
+    Result<List<BaseCategory1>> findAllCategory1() {
+        List<BaseCategory1> result = baseCategoryService.findAllCategory1();
         return Result.ok(result);
     }
 }

@@ -138,7 +138,7 @@ public class AlbumInfoApiController {
         List<AlbumAttributeValue> albumAttributeValueList = albumInfoService.findAlbumAttributeValue(albumId);
         return Result.ok(albumAttributeValueList);
     }
-
+    @Operation(summary = "根据专辑 id 获取专辑统计数据")
     @GetMapping("/getAlbumStatVo/{albumId}")
     Result<AlbumStatVo> getAlbumStatVo(@PathVariable("albumId") Long albumId) {
         AlbumStatVo albumStatVo = albumInfoService.getAlbumStatVo(albumId);
