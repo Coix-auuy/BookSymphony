@@ -4,58 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a271840d-fb25-4606-b81b-5bb69b89eb91" name="Changes" comment="完成检索模块的开发、测试。">
+    <list default="true" id="a271840d-fb25-4606-b81b-5bb69b89eb91" name="Changes" comment="完成详情介绍模块的开发、测试。">
+      <change afterPath="$PROJECT_DIR$/service/service-cdc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-client/service-album-client/src/main/java/com/atguigu/tingshu/album/client/CategoryFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-album-client/src/main/java/com/atguigu/tingshu/album/client/CategoryFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-client/service-album-client/src/main/java/com/atguigu/tingshu/album/client/impl/CategoryDegradeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-album-client/src/main/java/com/atguigu/tingshu/album/client/impl/CategoryDegradeFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-client/service-user-client/src/main/java/com/atguigu/tingshu/user/client/UserInfoFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-user-client/src/main/java/com/atguigu/tingshu/user/client/UserInfoFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-client/service-user-client/src/main/java/com/atguigu/tingshu/user/client/impl/UserInfoDegradeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-user-client/src/main/java/com/atguigu/tingshu/user/client/impl/UserInfoDegradeFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-client/service-user-client/target/classes/com/atguigu/tingshu/user/client/UserInfoFeignClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-user-client/target/classes/com/atguigu/tingshu/user/client/UserInfoFeignClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-client/service-user-client/target/classes/com/atguigu/tingshu/user/client/impl/UserInfoDegradeFeignClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-user-client/target/classes/com/atguigu/tingshu/user/client/impl/UserInfoDegradeFeignClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/api/AlbumInfoApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/api/AlbumInfoApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/api/BaseCategoryApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/api/BaseCategoryApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/api/TrackInfoApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/api/TrackInfoApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/AlbumInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/AlbumInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/TrackInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/mapper/TrackInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/AlbumInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/AlbumInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/BaseCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/BaseCategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/TrackInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/TrackInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/ServiceAlbumApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/ServiceAlbumApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/impl/AlbumInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/impl/AlbumInfoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/impl/BaseCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/impl/BaseCategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/impl/TrackInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/java/com/atguigu/tingshu/album/service/impl/TrackInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-album/src/main/resources/mapper/TrackInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/src/main/resources/mapper/TrackInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/album/api/AlbumInfoApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/album/api/AlbumInfoApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/album/api/TrackInfoApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/album/api/TrackInfoApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/album/mapper/AlbumInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/album/mapper/AlbumInfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/album/mapper/TrackInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/album/mapper/TrackInfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/album/service/AlbumInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/album/service/AlbumInfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/album/service/TrackInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/album/service/TrackInfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/ServiceAlbumApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/ServiceAlbumApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/album/service/impl/AlbumInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/album/service/impl/AlbumInfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/album/service/impl/TrackInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/album/service/impl/TrackInfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-album/target/classes/mapper/TrackInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/target/classes/mapper/TrackInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/api/SearchApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/api/SearchApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/service/ItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/service/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/service/SearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/album/service/impl/BaseCategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-album/target/classes/com/atguigu/tingshu/album/service/impl/BaseCategoryServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/service/impl/ItemServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/service/impl/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/src/main/java/com/atguigu/tingshu/search/service/impl/SearchServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-search/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-search/target/classes/com/atguigu/tingshu/search/api/SearchApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/target/classes/com/atguigu/tingshu/search/api/SearchApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-search/target/classes/com/atguigu/tingshu/search/service/ItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/target/classes/com/atguigu/tingshu/search/service/ItemService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-search/target/classes/com/atguigu/tingshu/search/service/impl/ItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/target/classes/com/atguigu/tingshu/search/service/impl/ItemServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-search/target/classes/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/target/classes/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/api/UserInfoApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/api/UserInfoApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/api/UserListenProcessApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/api/UserListenProcessApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/UserInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/UserListenProcessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/UserListenProcessService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/impl/UserInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/impl/UserListenProcessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/java/com/atguigu/tingshu/user/service/impl/UserListenProcessServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-user/target/classes/com/atguigu/tingshu/user/api/UserInfoApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/target/classes/com/atguigu/tingshu/user/api/UserInfoApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-user/target/classes/com/atguigu/tingshu/user/api/UserListenProcessApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/target/classes/com/atguigu/tingshu/user/api/UserListenProcessApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-user/target/classes/com/atguigu/tingshu/user/service/UserInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/target/classes/com/atguigu/tingshu/user/service/UserInfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-user/target/classes/com/atguigu/tingshu/user/service/UserListenProcessService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/target/classes/com/atguigu/tingshu/user/service/UserListenProcessService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-user/target/classes/com/atguigu/tingshu/user/service/impl/UserInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/target/classes/com/atguigu/tingshu/user/service/impl/UserInfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-user/target/classes/com/atguigu/tingshu/user/service/impl/UserListenProcessServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/target/classes/com/atguigu/tingshu/user/service/impl/UserListenProcessServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-search/target/classes/com/atguigu/tingshu/search/service/impl/SearchServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-search/target/classes/com/atguigu/tingshu/search/service/impl/SearchServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,9 +32,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="AnnotationType" />
         <option value="mybatis-mapper" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -93,8 +60,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="customMavenHome" value="E:/maven/apache-maven-3.8.7" />
+        <option name="customMavenHome" value="C:\Users\HeZx\Git\Java_lib\apache-maven-3.8.8" />
         <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="C:\Users\HeZx\Git\Java_lib\apache-maven-3.8.8\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -116,6 +84,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.DemoCompletableFuture.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.service-cdc [clean].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -124,11 +93,12 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ServerGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ServiceAccountApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ServiceAlbumApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ServiceSearchApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ServiceUserApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CDCApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ServerGatewayApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ServiceAccountApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ServiceAlbumApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ServiceSearchApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ServiceUserApplication.executor&quot;: &quot;Debug&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
@@ -143,7 +113,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -161,6 +131,7 @@
       <recent name="com.atguigu.tingshu.album.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atguigu.tingshu.config" />
       <recent name="com.atguigu.tingshu.model.live" />
     </key>
   </component>
@@ -190,13 +161,26 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DemoCompletableFuture">
+  <component name="RunManager" selected="Spring Boot.CDCApplication">
     <configuration name="DemoCompletableFuture" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.tingshu.user.api.DemoCompletableFuture" />
       <module name="service-user" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.atguigu.tingshu.user.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CDCApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-cdc" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.tingshu.CDCApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.tingshu.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -294,9 +278,11 @@
       <item itemvalue="Spring Boot.ServiceSearchApplication" />
       <item itemvalue="Spring Boot.ServiceSystemApplication" />
       <item itemvalue="Spring Boot.ServiceUserApplication" />
+      <item itemvalue="Spring Boot.CDCApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.CDCApplication" />
         <item itemvalue="Application.DemoCompletableFuture" />
       </list>
     </recent_temporary>
@@ -304,8 +290,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
       </set>
     </attachedChunks>
   </component>
@@ -371,6 +357,17 @@
       <workItem from="1732677545231" duration="12847000" />
       <workItem from="1732714976239" duration="847000" />
       <workItem from="1732753698879" duration="8253000" />
+      <workItem from="1732762024208" duration="1488000" />
+      <workItem from="1732841494987" duration="2976000" />
+      <workItem from="1732929068425" duration="1307000" />
+      <workItem from="1732930593570" duration="2775000" />
+      <workItem from="1732970000410" duration="1147000" />
+      <workItem from="1733013231689" duration="11554000" />
+      <workItem from="1733191652546" duration="5815000" />
+      <workItem from="1733712604097" duration="5862000" />
+      <workItem from="1733793780428" duration="112000" />
+      <workItem from="1733793964413" duration="8547000" />
+      <workItem from="1733816543996" duration="2558000" />
     </task>
     <task id="LOCAL-00001" summary="完成了专辑管理和声音管理模块的开发。">
       <option name="closed" value="true" />
@@ -412,7 +409,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731682093852</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="完成详情介绍模块的开发、测试。">
+      <option name="closed" value="true" />
+      <created>1732762082647</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732762082647</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,7 +452,8 @@
     <MESSAGE value="完成了专辑管理和声音管理模块的开发。" />
     <MESSAGE value="完成微信登录的开发。" />
     <MESSAGE value="完成检索模块的开发、测试。" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成检索模块的开发、测试。" />
+    <MESSAGE value="完成详情介绍模块的开发、测试。" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成详情介绍模块的开发、测试。" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

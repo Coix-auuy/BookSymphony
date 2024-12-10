@@ -2,6 +2,7 @@ package com.atguigu.tingshu.search.service.impl;
 
 import com.atguigu.tingshu.album.client.AlbumInfoFeignClient;
 import com.atguigu.tingshu.album.client.CategoryFeignClient;
+import com.atguigu.tingshu.common.constant.RedisConstant;
 import com.atguigu.tingshu.common.result.Result;
 import com.atguigu.tingshu.model.album.AlbumInfo;
 import com.atguigu.tingshu.model.album.BaseCategoryView;
@@ -11,6 +12,8 @@ import com.atguigu.tingshu.user.client.UserInfoFeignClient;
 import com.atguigu.tingshu.vo.album.AlbumStatVo;
 import com.atguigu.tingshu.vo.user.UserInfoVo;
 import lombok.extern.slf4j.Slf4j;
+import org.redisson.api.RBloomFilter;
+import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
@@ -33,10 +36,20 @@ public class ItemServiceImpl implements ItemService {
     private ThreadPoolExecutor threadPoolExecutor;
     @Autowired
     private UserInfoFeignClient userInfoFeignClient;
+    @Autowired
+    private RedissonClient redissonClient;
 
     @Override
     public Map<String, Object> getItem(Long albumId) {
+        // 判断布隆过滤器中是否存在专辑 id
+        // 保存专辑 id 到布隆过滤器
         HashMap<String, Object> resultMap = new HashMap<>();
+        RBloomFilter<Object> bloomFilter = redissonClient.getBloomFilter(RedisConstant.ALBUM_BLOOM_FILTER);
+
+        if (!bloomFilter.contains(albumId)) {
+            // 不包含，返回空数据，保存了缓存和数据库
+            return resultMap;
+        }
 
         // 远程调用获取所需数据
         // 获取统计数据

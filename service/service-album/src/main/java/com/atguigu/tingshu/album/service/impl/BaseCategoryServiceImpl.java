@@ -3,6 +3,7 @@ package com.atguigu.tingshu.album.service.impl;
 import com.alibaba.fastjson.JSONObject;
 import com.atguigu.tingshu.album.mapper.*;
 import com.atguigu.tingshu.album.service.BaseCategoryService;
+import com.atguigu.tingshu.common.cache.GuiGuCache;
 import com.atguigu.tingshu.common.result.Result;
 import com.atguigu.tingshu.model.album.*;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
@@ -94,6 +95,7 @@ public class BaseCategoryServiceImpl extends ServiceImpl<BaseCategory1Mapper, Ba
     }
 
 
+    @GuiGuCache(prefix = "category:")
     @Override
     public BaseCategoryView getCategoryView(Long category3Id) {
         // 通过类别ID查询并返回类别视图
