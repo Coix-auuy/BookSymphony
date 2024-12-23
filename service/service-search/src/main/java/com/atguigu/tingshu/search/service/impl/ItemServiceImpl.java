@@ -44,12 +44,12 @@ public class ItemServiceImpl implements ItemService {
         // 判断布隆过滤器中是否存在专辑 id
         // 保存专辑 id 到布隆过滤器
         HashMap<String, Object> resultMap = new HashMap<>();
-        RBloomFilter<Object> bloomFilter = redissonClient.getBloomFilter(RedisConstant.ALBUM_BLOOM_FILTER);
-
-        if (!bloomFilter.contains(albumId)) {
-            // 不包含，返回空数据，保存了缓存和数据库
-            return resultMap;
-        }
+        // RBloomFilter<Object> bloomFilter = redissonClient.getBloomFilter(RedisConstant.ALBUM_BLOOM_FILTER);
+        //
+        // if (!bloomFilter.contains(albumId)) {
+        //     // 不包含，返回空数据，保存了缓存和数据库
+        //     return resultMap;
+        // }
 
         // 远程调用获取所需数据
         // 获取统计数据

@@ -37,12 +37,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
+import org.springframework.util.CollectionUtils;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import javax.sound.midi.Track;
+import java.math.BigDecimal;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -189,7 +190,7 @@ public class TrackInfoServiceImpl extends ServiceImpl<TrackInfoMapper, TrackInfo
                 Result<Map<Long, Integer>> resultMap = userInfoFeignClient.userIsPaidTrack(albumId, tarckIdList);
                 Assert.notNull(resultMap, "返回结果为空");
                 Map<Long, Integer> map = resultMap.getData();
-                Assert.notNull(map, "返回为空");
+                Assert.notNull(map, "返回结果为空");
                 for (AlbumTrackListVo albumTrackListVo : albumTrackNeedPaidListVoList) {
                     albumTrackListVo.setIsShowPaidMark(map.get(albumTrackListVo.getTrackId()) != 1);
                 }
@@ -217,6 +218,84 @@ public class TrackInfoServiceImpl extends ServiceImpl<TrackInfoMapper, TrackInfo
             vodService.removeMedia(mediaFileId);
         }
         trackInfoMapper.updateById(trackInfo);
+    }
+
+    @Override
+    public List<Map<String, Object>> findUserTrackPaidList(Long trackId, Long userId) {
+        // 根据声音 Id 获取当前声音对象
+        TrackInfo trackInfo = this.getById(trackId);
+        // 根据专辑 Id 获取专辑信息：后续获取单条声音价格
+        AlbumInfo albumInfo = albumInfoMapper.selectById(trackInfo.getAlbumId());
+        // 根据专辑 Id 获取到用户已购买过的声音 Id 集合
+        Result<List<Long>> trackIdListResult = userInfoFeignClient.findUserPaidTrackList(trackInfo.getAlbumId());
+        Assert.notNull(trackIdListResult, "声音 Id 集合结果集为空");
+        List<Long> trackIdList = trackIdListResult.getData();
+        Assert.notNull(trackIdList, "声音 Id 集合为空");
+
+        // 根据专辑 Id 和 trackInfo 中的 orderNum 获取当前声音之后所有的声音信息
+        LambdaQueryWrapper<TrackInfo> trackInfoQueryWrapper = new LambdaQueryWrapper<>();
+        trackInfoQueryWrapper.eq(TrackInfo::getAlbumId, trackInfo.getAlbumId()).gt(TrackInfo::getOrderNum, trackInfo.getOrderNum()).orderByAsc(TrackInfo::getOrderNum);
+        List<TrackInfo> trackInfoList = trackInfoMapper.selectList(trackInfoQueryWrapper);
+        // 排除购买过的
+        List<TrackInfo> buyList = trackInfoList.stream().filter(track -> !trackIdList.contains(track.getId())).collect(Collectors.toList());
+        // 构造声音分集购买数据列表
+        List<Map<String, Object>> list = new ArrayList<>();
+        // 本集
+        {
+            Map<String, Object> map = new HashMap<>();
+            map.put("name", "本集");
+            map.put("price", albumInfo.getPrice());
+            map.put("trackCount", 0);
+            list.add(map);
+        }
+        // 后 n 集
+        int buyListSize = buyList.size();
+        if (buyListSize > 0) {
+            int[] thresholds = {10, 20, 30, 40, 50};
+            for (int threshold : thresholds) {
+                Map<String, Object> map = new HashMap<>();
+                BigDecimal price;
+                if (buyListSize > threshold) {
+                    // BigDecimal 数据类型，传递参数时，使用 String 数据类型，防止精度丢失
+                    price = albumInfo.getPrice().multiply(new BigDecimal(String.valueOf(threshold)));
+                    map.put("name", "后" + threshold + "集");
+                    map.put("price", price);
+                    map.put("trackCount", threshold);
+                    list.add(map);
+                } else {
+                    price = albumInfo.getPrice().multiply(new BigDecimal(String.valueOf(buyListSize)));
+                    map.put("name", "后" + buyListSize + "集");
+                    map.put("price", price);
+                    map.put("trackCount", buyListSize);
+                    list.add(map);
+                    break;
+                }
+            }
+        }
+        return list;
+    }
+
+    @Override
+    public List<TrackInfo> findPaidTrackInfoList(Long trackId, Integer trackCount, Long userId) {
+        // 根据当前声音 Id 获取到声音对象
+        TrackInfo trackInfo = trackInfoMapper.selectById(trackId);
+        // 根据专辑 Id 获取到用户已购买过的声音 Id 集合
+        Result<List<Long>> trackIdListResult = userInfoFeignClient.findUserPaidTrackList(trackInfo.getAlbumId());
+        Assert.notNull(trackIdListResult, "声音 Id 集合结果集为空");
+        List<Long> trackIdList = trackIdListResult.getData();
+        Assert.notNull(trackIdList, "声音 Id 集合为空");
+        // 查询购买的声音列表
+        if(trackCount > 0) {
+            LambdaQueryWrapper<TrackInfo> trackInfoQueryWrapper = new LambdaQueryWrapper<>();
+            trackInfoQueryWrapper.eq(TrackInfo::getAlbumId, trackInfo.getAlbumId()).gt(TrackInfo::getOrderNum, trackInfo.getOrderNum());
+            if(!CollectionUtils.isEmpty(trackIdList)) {
+                trackInfoQueryWrapper.notIn(TrackInfo::getId, trackIdList);
+            }
+            trackInfoQueryWrapper.orderByAsc(TrackInfo::getOrderNum).last("limit " + trackCount);
+            return trackInfoMapper.selectList(trackInfoQueryWrapper);
+        } else {
+            return List.of(trackInfo);
+        }
     }
 
     private void saveTrackStat(Long trackId, String statPlay) {

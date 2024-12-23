@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="IU-243.22562.145">
+  <component name="dataSourceStorageLocal" created-in="IU-243.22562.218">
     <data-source name="192.168.200.130" uuid="377f20e3-fe3b-4626-9168-c7a7571e66d6">
       <database-info product="MySQL" version="8.0.29" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-j-8.2.0 (Revision: 06a1f724497fd81c6a659131fda822c9e5085b6c)" dbms="MYSQL" exact-version="8.0.29" exact-driver-version="8.2">
         <extra-name-characters>#@</extra-name-characters>
@@ -12,6 +12,7 @@
       <schema-mapping>
         <introspection-scope>
           <node kind="schema">
+            <name qname="seata" />
             <name qname="tingshu_account" />
             <name qname="tingshu_album" />
             <name qname="tingshu_dispatch" />
@@ -20,6 +21,7 @@
             <name qname="tingshu_payment" />
             <name qname="tingshu_system" />
             <name qname="tingshu_user" />
+            <name qname="xxl_job" />
           </node>
         </introspection-scope>
       </schema-mapping>

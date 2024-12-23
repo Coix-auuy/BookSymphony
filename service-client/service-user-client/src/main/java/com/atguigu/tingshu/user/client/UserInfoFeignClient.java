@@ -1,8 +1,10 @@
 package com.atguigu.tingshu.user.client;
 
 import com.atguigu.tingshu.common.result.Result;
+import com.atguigu.tingshu.model.user.VipServiceConfig;
 import com.atguigu.tingshu.user.client.impl.UserInfoDegradeFeignClient;
 import com.atguigu.tingshu.vo.user.UserInfoVo;
+import com.atguigu.tingshu.vo.user.UserPaidRecordVo;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,4 +35,38 @@ public interface UserInfoFeignClient {
 
     @PostMapping("api/user/userInfo/userIsPaidTrack/{albumId}")
     Result<Map<Long, Integer>> userIsPaidTrack(@PathVariable Long albumId, @RequestBody List<Long> tarckIdList);
+
+    @GetMapping("api/user/userInfo/isPaidAlbum/{albumId}")
+    Result<Boolean> isPaidAlbum(@PathVariable("albumId") Long albumId);
+
+    /**
+     * 根据 vipServiceConfigId 获取 VIP 服务配置信息
+     * @param vipServiceConfigId
+     * @return
+     */
+    @GetMapping("api/user/vipServiceConfig/getVipServiceConfig/{vipServiceConfigId}")
+    Result<VipServiceConfig> getVipServiceConfig(@PathVariable("vipServiceConfigId") Long vipServiceConfigId);
+
+    /**
+     * 根据专辑 Id 获取用户已购买过的声音 Id 列表
+     * @param albumId
+     * @return
+     */
+    @GetMapping("api/user/userInfo/findUserPaidTrackList/{albumId}")
+    Result<List<Long>> findUserPaidTrackList(@PathVariable Long albumId);
+
+    /**
+     * 更新 VIP 到期失效状态
+     * @return
+     */
+    @GetMapping("api/user/userInfo/updateVipExpireStatus")
+    Result updateVipExpireStatus();
+
+    /**
+     * 处理用户购买记录
+     * @param userPaidRecordVo
+     * @return
+     */
+    @PostMapping("api/user/userInfo/savePaidRecord")
+    Result savePaidRecord(@RequestBody UserPaidRecordVo userPaidRecordVo);
 }

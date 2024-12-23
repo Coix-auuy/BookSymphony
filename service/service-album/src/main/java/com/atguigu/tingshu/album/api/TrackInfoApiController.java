@@ -11,13 +11,13 @@ import com.atguigu.tingshu.vo.album.TrackInfoVo;
 import com.atguigu.tingshu.vo.album.TrackListVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import io.prometheus.client.Summary;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
 import java.util.Map;
 
 @Tag(name = "声音管理")
@@ -100,7 +100,7 @@ public class TrackInfoApiController {
      */
     @Operation(summary = "根据声音 id 获取声音信息")
     @GetMapping("/getTrackInfo/{trackId}")
-    public Result getAlbumInfo(@PathVariable Long trackId) {
+    public Result getTrackInfo(@PathVariable Long trackId) {
         // 调用服务层方法
         TrackInfo trackInfo = trackInfoService.getTrackInfoById(trackId);
         return Result.ok(trackInfo);
@@ -131,5 +131,42 @@ public class TrackInfoApiController {
         IPage<AlbumTrackListVo> albumTrackListVoIPage = trackInfoService.findAlbumTrackPage(albumTrackListVoPage, albumId, userId);
         return Result.ok(albumTrackListVoIPage);
     }
+
+    @TsLogin
+    @Operation(summary = "获取可购买声音分集列表")
+    @GetMapping("/findUserTrackPaidList/{trackId}")
+    public Result findUserTrackPaidList(@PathVariable Long trackId) {
+        Long userId = AuthContextHolder.getUserId();
+        List<Map<String, Object>> result = trackInfoService.findUserTrackPaidList(trackId, userId);
+        return Result.ok(result);
+    }
+
+    /**
+     * 获取下单付费声音列表
+     *
+     * @param trackId
+     * @param trackCount
+     * @return
+     */
+    @Operation(summary = "根据声音 Id 和集数获取下单付费声音列表")
+    @GetMapping("/findPaidTrackInfoList/{trackId}/{trackCount}")
+    Result<List<TrackInfo>> findPaidTrackInfoList(@PathVariable Long trackId, @PathVariable Integer trackCount) {
+        Long userId = AuthContextHolder.getUserId();
+        List<TrackInfo> result = trackInfoService.findPaidTrackInfoList(trackId, trackCount, userId);
+        return Result.ok(result);
+
+    }
+
+    // /**
+    //  * 根据 trackId 获取声音信息
+    //  *
+    //  * @param trackId
+    //  * @return
+    //  */
+    // @Operation(summary = "根据 trackId 获取声音信息")
+    // @GetMapping("/getTrackInfo/{trackId}")
+    // Result<TrackInfo> getTrackInfoById(@PathVariable("trackId") Long trackId) {
+    //     return Result.ok(trackInfoService.getById(trackId));
+    // }
 }
 
